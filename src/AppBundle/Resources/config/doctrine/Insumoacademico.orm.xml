@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Insumoacademico" table="insumoacademico">
+    <indexes>
+      <index name="FK_RELATIONSHIP_21" columns="IDINV"/>
+    </indexes>
+    <id name="idinsumo" type="integer" column="IDINSUMO">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nominsumo" type="string" column="NOMINSUMO" length="150" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="discripcioninsumo" type="string" column="DISCRIPCIONINSUMO" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="tipoinsumo" type="string" column="TIPOINSUMO" length="25" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="nomtipoinsumo" type="string" column="NOMTIPOINSUMO" length="150" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="descripciontipo" type="string" column="DESCRIPCIONTIPO" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="estado" type="smallint" column="ESTADO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <many-to-one field="idinv" target-entity="Inventario" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDINV" referenced-column-name="IDINV"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,68 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Cheque
+ *
+ * @ORM\Table(name="cheque")
+ * @ORM\Entity
+ */
+class Cheque
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDCHEQUE", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idcheque;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CODIGO", type="string", length=25, nullable=true)
+     */
+    private $codigo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MONTO", type="decimal", precision=10, scale=0, nullable=true)
+     */
+    private $monto;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DESTINATARIO", type="string", length=50, nullable=true)
+     */
+    private $destinatario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="BANCO", type="string", length=250, nullable=true)
+     */
+    private $banco;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="FECHAVENCIMIENTO", type="date", nullable=true)
+     */
+    private $fechavencimiento;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ESTADO", type="string", length=25, nullable=true)
+     */
+    private $estado;
+
+
+}
+

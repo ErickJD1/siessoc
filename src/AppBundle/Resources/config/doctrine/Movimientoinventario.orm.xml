@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Movimientoinventario" table="movimientoinventario">
+    <indexes>
+      <index name="FK_RELATIONSHIP_22" columns="IDINSUMO"/>
+    </indexes>
+    <id name="idmov" type="integer" column="IDMOV">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tipomovimiento" type="string" column="TIPOMOVIMIENTO" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="fechaemision" type="datetime" column="FECHAEMISION" nullable="false">
+      <options>
+        <option name="default">CURRENT_TIMESTAMP</option>
+      </options>
+    </field>
+    <field name="fechaentrega" type="datetime" column="FECHAENTREGA" nullable="false">
+      <options>
+        <option name="default">0000-00-00 00:00:00</option>
+      </options>
+    </field>
+    <field name="referencia" type="string" column="REFERENCIA" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="idinsumo" target-entity="Insumoacademico" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDINSUMO" referenced-column-name="IDINSUMO"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

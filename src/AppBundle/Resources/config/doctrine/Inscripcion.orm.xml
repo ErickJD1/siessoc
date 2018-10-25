@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Inscripcion" table="inscripcion">
+    <id name="idinscripcion" type="integer" column="IDINSCRIPCION">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="codexpediente" type="integer" column="CODEXPEDIENTE" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="anio" type="date" column="ANIO" nullable="true"/>
+    <field name="numciclo" type="integer" column="NUMCICLO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="preciomatricula" type="float" column="PRECIOMATRICULA" precision="10" scale="0" nullable="true"/>
+    <field name="preciomensualidad" type="float" column="PRECIOMENSUALIDAD" precision="10" scale="0" nullable="true"/>
+  </entity>
+</doctrine-mapping>

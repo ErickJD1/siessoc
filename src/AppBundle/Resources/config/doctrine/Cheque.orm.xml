@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Cheque" table="cheque">
+    <id name="idcheque" type="integer" column="IDCHEQUE">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="codigo" type="string" column="CODIGO" length="25" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="monto" type="decimal" column="MONTO" precision="10" scale="0" nullable="true"/>
+    <field name="destinatario" type="string" column="DESTINATARIO" length="50" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="banco" type="string" column="BANCO" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="fechavencimiento" type="date" column="FECHAVENCIMIENTO" nullable="true"/>
+    <field name="estado" type="string" column="ESTADO" length="25" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

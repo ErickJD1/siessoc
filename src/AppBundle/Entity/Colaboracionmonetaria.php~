@@ -1,0 +1,54 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Colaboracionmonetaria
+ *
+ * @ORM\Table(name="colaboracionmonetaria")
+ * @ORM\Entity
+ */
+class Colaboracionmonetaria
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDCOLABORACIONMONETARIA", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idcolaboracionmonetaria;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MONTOMES", type="decimal", precision=10, scale=0, nullable=true)
+     */
+    private $montomes;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DESCRIPCION", type="string", length=100, nullable=true)
+     */
+    private $descripcion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SALDO", type="decimal", precision=10, scale=0, nullable=true)
+     */
+    private $saldo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ESTADO", type="smallint", nullable=true)
+     */
+    private $estado;
+
+
+}
+

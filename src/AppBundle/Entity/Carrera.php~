@@ -1,0 +1,64 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Carrera
+ *
+ * @ORM\Table(name="carrera", indexes={@ORM\Index(name="FK_RELATIONSHIP_29", columns={"IDMATERIA"})})
+ * @ORM\Entity
+ */
+class Carrera
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDCARRERA", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idcarrera;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NOMCARRERA", type="string", length=100, nullable=true)
+     */
+    private $nomcarrera;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DESCRIPCION", type="string", length=250, nullable=true)
+     */
+    private $descripcion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="UNIVERSIDAD", type="string", length=250, nullable=true)
+     */
+    private $universidad;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TITULO", type="string", length=250, nullable=true)
+     */
+    private $titulo;
+
+    /**
+     * @var \Materia
+     *
+     * @ORM\ManyToOne(targetEntity="Materia")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="IDMATERIA", referencedColumnName="IDMATERIA")
+     * })
+     */
+    private $idmateria;
+
+
+}
+

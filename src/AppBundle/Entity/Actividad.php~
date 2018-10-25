@@ -1,0 +1,78 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Actividad
+ *
+ * @ORM\Table(name="actividad", indexes={@ORM\Index(name="FK_RELATIONSHIP_32", columns={"IDREQUISITO"})})
+ * @ORM\Entity
+ */
+class Actividad
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDACTIVIDAD", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idactividad;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NOMACTIVIDAD", type="string", length=100, nullable=true)
+     */
+    private $nomactividad;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="FECHAACTIVIDAD", type="date", nullable=true)
+     */
+    private $fechaactividad;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DESCRIPCIONACTIVIDAD", type="string", length=250, nullable=true)
+     */
+    private $descripcionactividad;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="VALIDACION", type="smallint", nullable=true)
+     */
+    private $validacion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="BECARIO", type="string", length=100, nullable=true)
+     */
+    private $becario;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ESTADO", type="smallint", nullable=true)
+     */
+    private $estado;
+
+    /**
+     * @var \Requisito
+     *
+     * @ORM\ManyToOne(targetEntity="Requisito")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="IDREQUISITO", referencedColumnName="IDREQUISITO")
+     * })
+     */
+    private $idrequisito;
+
+
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Programarcontenido" table="programarcontenido">
+    <indexes>
+      <index name="FK_RELATIONSHIP_12" columns="IDCONTENIDO"/>
+    </indexes>
+    <id name="idprogramacion" type="integer" column="IDPROGRAMACION">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fecha" type="date" column="FECHA" nullable="true"/>
+    <field name="hora" type="time" column="HORA" nullable="true"/>
+    <field name="descripcion" type="string" column="DESCRIPCION" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="idcontenido" target-entity="Publicacioncontenido" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDCONTENIDO" referenced-column-name="IDCONTENIDO"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

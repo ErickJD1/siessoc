@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Carrera" table="carrera">
+    <indexes>
+      <index name="FK_RELATIONSHIP_29" columns="IDMATERIA"/>
+    </indexes>
+    <id name="idcarrera" type="integer" column="IDCARRERA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nomcarrera" type="string" column="NOMCARRERA" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="descripcion" type="string" column="DESCRIPCION" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="universidad" type="string" column="UNIVERSIDAD" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="titulo" type="string" column="TITULO" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="idmateria" target-entity="Materia" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDMATERIA" referenced-column-name="IDMATERIA"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

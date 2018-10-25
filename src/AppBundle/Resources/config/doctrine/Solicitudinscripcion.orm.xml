@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Solicitudinscripcion" table="solicitudinscripcion">
+    <indexes>
+      <index name="FK_RELATIONSHIP_9" columns="IDTIPOSOLICITANTE"/>
+    </indexes>
+    <id name="idsolicitud" type="integer" column="IDSOLICITUD">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombres" type="string" column="NOMBRES" length="25" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="apellidos" type="string" column="APELLIDOS" length="25" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="correo" type="string" column="CORREO" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="telefono" type="string" column="TELEFONO" length="10" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="ingresosfamiliares" type="decimal" column="INGRESOSFAMILIARES" precision="25" scale="0" nullable="true"/>
+    <field name="miembrosfamiliares" type="integer" column="MIEMBROSFAMILIARES" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="tipocasa" type="string" column="TIPOCASA" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="carreraestudiar" type="string" column="CARRERAESTUDIAR" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="universidad" type="string" column="UNIVERSIDAD" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="montomatricula" type="decimal" column="MONTOMATRICULA" precision="20" scale="0" nullable="true"/>
+    <field name="cuotamensual" type="string" column="CUOTAMENSUAL" length="20" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="duracioncarrera" type="string" column="DURACIONCARRERA" length="10" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="trabajoadicional" type="string" column="TRABAJOADICIONAL" length="2" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="cuotamesaportar" type="decimal" column="CUOTAMESAPORTAR" precision="20" scale="0" nullable="true"/>
+    <field name="mesescompromiso" type="integer" column="MESESCOMPROMISO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="estado" type="smallint" column="ESTADO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <many-to-one field="idtiposolicitante" target-entity="Tiposolicitante" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDTIPOSOLICITANTE" referenced-column-name="IDTIPOSOLICITANTE"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

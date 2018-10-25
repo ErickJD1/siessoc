@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Cuenta" table="cuenta">
+    <indexes>
+      <index name="FK_RELATIONSHIP_14" columns="IDTIPOCUENTA"/>
+    </indexes>
+    <id name="idcuenta" type="integer" column="IDCUENTA">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="numcuenta" type="string" column="NUMCUENTA" length="10" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="nombre" type="string" column="NOMBRE" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="descripcion" type="string" column="DESCRIPCION" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="fechaapertura" type="datetime" column="FECHAAPERTURA" nullable="false">
+      <options>
+        <option name="default">CURRENT_TIMESTAMP</option>
+      </options>
+    </field>
+    <field name="banco" type="string" column="BANCO" length="250" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="saldo" type="decimal" column="SALDO" precision="10" scale="0" nullable="true"/>
+    <field name="estado" type="smallint" column="ESTADO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <many-to-one field="idtipocuenta" target-entity="Tipocuenta" fetch="LAZY">
+      <join-columns>
+        <join-column name="IDTIPOCUENTA" referenced-column-name="IDTIPOCUENTA"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

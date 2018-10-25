@@ -1,0 +1,47 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Inventario
+ *
+ * @ORM\Table(name="inventario")
+ * @ORM\Entity
+ */
+class Inventario
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDINV", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idinv;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NOMBREART", type="string", length=20, nullable=true)
+     */
+    private $nombreart;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="CANTDISPONIBLEART", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $cantdisponibleart;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="CANTENTREGADOS", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $cantentregados;
+
+
+}
+
