@@ -167,21 +167,79 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::indexAction',  '_route' => 'homepage',);
         }
 
-        if (0 === strpos($pathinfo, '/d')) {
-            // admin_dashboard
-            if ($pathinfo === '/dashboard') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::dashboardAction',  '_route' => 'admin_dashboard',);
-            }
+        // admin_dashboard
+        if ($pathinfo === '/dashboard') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::dashboardAction',  '_route' => 'admin_dashboard',);
+        }
 
-            // avanzu_admin_home
-            if (rtrim($pathinfo, '/') === '/demo-admin') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'avanzu_admin_home');
+        if (0 === strpos($pathinfo, '/tipocuenta')) {
+            // tipocuenta_index
+            if ($pathinfo === '/tipocuenta/tcuenta') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_tipocuenta_index;
                 }
 
-                return array (  '_controller' => 'Avanzu\\AdminThemeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'avanzu_admin_home',);
+                return array (  '_controller' => 'AppBundle\\Controller\\TipocuentaController::indexAction',  '_route' => 'tipocuenta_index',);
+            }
+            not_tipocuenta_index:
+
+            // tipocuenta_new
+            if ($pathinfo === '/tipocuenta/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_tipocuenta_new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\TipocuentaController::newAction',  '_route' => 'tipocuenta_new',);
+            }
+            not_tipocuenta_new:
+
+            if (0 === strpos($pathinfo, '/tipocuentatipocuenta')) {
+                // tipocuenta_show
+                if (preg_match('#^/tipocuentatipocuenta/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_tipocuenta_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tipocuenta_show')), array (  '_controller' => 'AppBundle\\Controller\\TipocuentaController::showAction',));
+                }
+                not_tipocuenta_show:
+
+                // tipocuenta_edit
+                if (preg_match('#^/tipocuentatipocuenta/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tipocuenta_edit;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tipocuenta_edit')), array (  '_controller' => 'AppBundle\\Controller\\TipocuentaController::editAction',));
+                }
+                not_tipocuenta_edit:
+
+                // tipocuenta_delete
+                if (preg_match('#^/tipocuentatipocuenta/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not_tipocuenta_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tipocuenta_delete')), array (  '_controller' => 'AppBundle\\Controller\\TipocuentaController::deleteAction',));
+                }
+                not_tipocuenta_delete:
+
             }
 
+        }
+
+        // avanzu_admin_home
+        if (rtrim($pathinfo, '/') === '/demo-admin') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'avanzu_admin_home');
+            }
+
+            return array (  '_controller' => 'Avanzu\\AdminThemeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'avanzu_admin_home',);
         }
 
         // avanzu_admin_logout

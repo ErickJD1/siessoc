@@ -1,0 +1,16 @@
+{% extends "layout/base-layout.html.twig" %}
+
+{% block page_content %}
+    <h1>Ingresar Tipo De Cuenta</h1>
+
+         {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+        {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('tipocuenta_index') }}" class="btn btn-info btn-sm">Atras</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -29,7 +29,7 @@ class UserController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $pagination = $em->getRepository('SalexUserBundle:User')->findAll();
-        
+
        /* if ($request->query->getAlnum('filter')) {
             $users
                 ->where('bp.firstName LIKE :firstName')
@@ -42,7 +42,7 @@ class UserController extends Controller
        # $users, /* query NOT result */
         #$request->query->getInt('page', 1)/*page number*/,2/*limit per page*/);
        # $pagination->setCustomParameters(array(
-        #   'align' => 'center', # center|right (for template: twitter_bootstrap_v4_pagination)	   
+        #   'align' => 'center', # center|right (for template: twitter_bootstrap_v4_pagination)
          #  'style' => 'bottom',
          #  'span_class' => 'whatever'
        # ));
@@ -67,7 +67,7 @@ class UserController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush($user);
-            
+
             $event = new FormEvent($form, $request);
             $dispatcher->dispatch(FOSUserEvents::REGISTRATION_SUCCESS, $event);
 

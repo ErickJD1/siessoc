@@ -13,12 +13,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>{% block title %}{{ site_name }}{% endblock %}</title>
-     
+
     {# -------------------------------------------------------------------------------------------------- STYLESHEETS #}
     {% block stylesheets %}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <link rel="stylesheet" href="{{ asset('bundles/avanzuadmintheme/static/'~ app.environment ~'/styles/admin-lte-all.css') }}" />
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" href="{{absolute_url(asset('css/jquery.dataTables.min.css'))}}" />
         <link rel="stylesheet" href="{{absolute_url(asset('css/dataTables.bootstrap.min.css'))}}">
         <link rel="stylesheet" href="{{absolute_url(asset('css/fonts/font-awesome.css'))}}">
         <link rel="stylesheet"  href="{{ absolute_url(asset('css/bootstrap.css'))}}" />

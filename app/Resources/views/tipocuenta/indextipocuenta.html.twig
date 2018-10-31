@@ -1,0 +1,51 @@
+{% extends "layout/base-layout.html.twig" %}
+{% block page_title %} Tipo Cuenta | {% endblock %}
+{% block page_subtitle %}Listado de cuentas {% endblock %}
+
+{% block page_content %}
+
+<div class="box box-primary">
+<div style="width:95%; margin-left:5%; margin-top: 2% ">
+
+<div class="container">
+    <a href="{{ path('tipocuenta_new') }}" class="btn btn-primary btn-sm">Creat Tipo De Cuenta</a>
+    <hr>
+
+    <table class="table table-bordered table-hover table-striped table-responsive" style="width:90%" id="tabelMahasiswa">
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Nombre cuenta</th>
+                <th style="width:300px">Descripcion</th>
+                <th>Estado</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        {% for tipocuentum in tipocuenta %}
+            <tr>
+                <td>{{ tipocuentum.idtipocuenta }}</td>
+                <td>{{ tipocuentum.nombrecuenta }}</td>
+                <td style="width:300px">{{ tipocuentum.descripcion }}</td>
+                <td>{{ tipocuentum.estado }}</td>
+                <td>
+
+                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#miventana{{ tipocuentum.idtipocuenta }}">Mostrar</button>
+
+                {{ render(controller('AppBundle:Tipocuenta:show', { 'id' : tipocuentum.idtipocuenta } )) }}
+
+              <!--  <a href="{{ path('tipocuenta_show', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-info btn-sm">Mostarar</a>-->
+                <a href="{{ path('tipocuenta_edit', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-success btn-sm">edit</a>
+                <a href="{{ path('tipocuenta_delete', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-danger btn-sm">delete</a>
+
+                </td>
+            </tr>
+    </div>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    </div>
+{% endblock %}
