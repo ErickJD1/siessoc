@@ -23,54 +23,52 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5df8260849896158f87a2cf1d5257ae5077deaeb128c605005333a282f044213 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5df8260849896158f87a2cf1d5257ae5077deaeb128c605005333a282f044213->enter($__internal_5df8260849896158f87a2cf1d5257ae5077deaeb128c605005333a282f044213_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:indextipocuenta.html.twig"));
+        $__internal_574f654970fd63c5d78103008eafdd7dc5b4cddb6f9e37ab41ff8bb54b6be6a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_574f654970fd63c5d78103008eafdd7dc5b4cddb6f9e37ab41ff8bb54b6be6a0->enter($__internal_574f654970fd63c5d78103008eafdd7dc5b4cddb6f9e37ab41ff8bb54b6be6a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:indextipocuenta.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_5df8260849896158f87a2cf1d5257ae5077deaeb128c605005333a282f044213->leave($__internal_5df8260849896158f87a2cf1d5257ae5077deaeb128c605005333a282f044213_prof);
+        $__internal_574f654970fd63c5d78103008eafdd7dc5b4cddb6f9e37ab41ff8bb54b6be6a0->leave($__internal_574f654970fd63c5d78103008eafdd7dc5b4cddb6f9e37ab41ff8bb54b6be6a0_prof);
 
     }
 
     // line 3
     public function block_page_title($context, array $blocks = array())
     {
-        $__internal_5aac4fd166d1525e888c386a4f7b1f0c4473ccae025ccdb66789e6189b3f98b1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5aac4fd166d1525e888c386a4f7b1f0c4473ccae025ccdb66789e6189b3f98b1->enter($__internal_5aac4fd166d1525e888c386a4f7b1f0c4473ccae025ccdb66789e6189b3f98b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_title"));
+        $__internal_a9d6acb1b0e83fb70ae3cf9107eb5042e7e6d77b68145263be47d6e132836197 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a9d6acb1b0e83fb70ae3cf9107eb5042e7e6d77b68145263be47d6e132836197->enter($__internal_a9d6acb1b0e83fb70ae3cf9107eb5042e7e6d77b68145263be47d6e132836197_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_title"));
 
         echo " Tipo Cuenta | ";
         
-        $__internal_5aac4fd166d1525e888c386a4f7b1f0c4473ccae025ccdb66789e6189b3f98b1->leave($__internal_5aac4fd166d1525e888c386a4f7b1f0c4473ccae025ccdb66789e6189b3f98b1_prof);
+        $__internal_a9d6acb1b0e83fb70ae3cf9107eb5042e7e6d77b68145263be47d6e132836197->leave($__internal_a9d6acb1b0e83fb70ae3cf9107eb5042e7e6d77b68145263be47d6e132836197_prof);
 
     }
 
     // line 4
     public function block_page_subtitle($context, array $blocks = array())
     {
-        $__internal_ed9e99e0aa8ef660cc8b843e624c23d2cf6da1e891e166295adc2df151fcbc1e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed9e99e0aa8ef660cc8b843e624c23d2cf6da1e891e166295adc2df151fcbc1e->enter($__internal_ed9e99e0aa8ef660cc8b843e624c23d2cf6da1e891e166295adc2df151fcbc1e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_subtitle"));
+        $__internal_70b12d3a0ba7a9a4ce57632c92a4fac5c9c1d4f7fcf9fae2f506057aec461387 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_70b12d3a0ba7a9a4ce57632c92a4fac5c9c1d4f7fcf9fae2f506057aec461387->enter($__internal_70b12d3a0ba7a9a4ce57632c92a4fac5c9c1d4f7fcf9fae2f506057aec461387_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_subtitle"));
 
         echo "Listado de cuentas ";
         
-        $__internal_ed9e99e0aa8ef660cc8b843e624c23d2cf6da1e891e166295adc2df151fcbc1e->leave($__internal_ed9e99e0aa8ef660cc8b843e624c23d2cf6da1e891e166295adc2df151fcbc1e_prof);
+        $__internal_70b12d3a0ba7a9a4ce57632c92a4fac5c9c1d4f7fcf9fae2f506057aec461387->leave($__internal_70b12d3a0ba7a9a4ce57632c92a4fac5c9c1d4f7fcf9fae2f506057aec461387_prof);
 
     }
 
     // line 6
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_cc93b9ed3da883b12ad00c4bc5efef8a0bb20bac1e7eff6be759e9eeca3a9ebb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cc93b9ed3da883b12ad00c4bc5efef8a0bb20bac1e7eff6be759e9eeca3a9ebb->enter($__internal_cc93b9ed3da883b12ad00c4bc5efef8a0bb20bac1e7eff6be759e9eeca3a9ebb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_21e606df5a17b7830c1fdc4e395a04fe4eef843a86b0be8bc94b41a03916391a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_21e606df5a17b7830c1fdc4e395a04fe4eef843a86b0be8bc94b41a03916391a->enter($__internal_21e606df5a17b7830c1fdc4e395a04fe4eef843a86b0be8bc94b41a03916391a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 7
-        echo twig_include($this->env, $context, "layout/mensajes.html.twig");
         echo "
-
 <div class=\"box box-primary\">
 <div style=\"width:90%; margin-left:5%; margin-top: 2% \">
 
     <a href=\"";
-        // line 12
+        // line 11
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_new");
         echo "\" class=\"btn btn-primary btn-sm\">Creat Tipo De Cuenta</a>
     <hr>
@@ -88,50 +86,58 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
         <tbody>
 
         ";
-        // line 27
+        // line 26
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["tipocuenta"]) ? $context["tipocuenta"] : $this->getContext($context, "tipocuenta")));
         foreach ($context['_seq'] as $context["_key"] => $context["tipocuentum"]) {
-            // line 28
+            // line 27
             echo "            <tr>
                 <td>";
-            // line 29
+            // line 28
             echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 30
+            // line 29
             echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "nombrecuenta", array()), "html", null, true);
             echo "</td>
                 <td style=\"width:300px\">";
-            // line 31
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "descripcion", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 32
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "estado", array()), "html", null, true);
             echo "</td>
                 <td>
 
                 <button class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#miventana";
-            // line 35
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()), "html", null, true);
             echo "\">Mostrar</button>
+                <button class=\"btn btn-success btn-sm\" data-toggle=\"modal\" data-target=\"#mieditar";
+            // line 35
+            echo twig_escape_filter($this->env, $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()), "html", null, true);
+            echo "\">Editar</button>
 
                 ";
             // line 37
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("AppBundle:Tipocuenta:show", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))));
             echo "
+                ";
+            // line 38
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("AppBundle:Tipocuenta:edit", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))));
+            echo "
 
               <!--  <a href=\"";
-            // line 39
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_show", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))), "html", null, true);
             echo "\" class=\"btn btn-info btn-sm\">Mostarar</a>-->
-                <a href=\"";
-            // line 40
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_edit", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))), "html", null, true);
-            echo "\" class=\"btn btn-success btn-sm\">edit</a>
-                <a href=\"";
+            <!--    <a href=\"";
             // line 41
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_edit", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))), "html", null, true);
+            echo "\" class=\"btn btn-success btn-sm\">edit</a>-->
+                <a href=\"";
+            // line 42
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_delete", array("id" => $this->getAttribute($context["tipocuentum"], "idtipocuenta", array()))), "html", null, true);
             echo "\" class=\"btn btn-danger btn-sm\">delete</a>
 
@@ -144,14 +150,14 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tipocuentum'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 49
         echo "        </tbody>
     </table>
     </div>
     </div>
 ";
         
-        $__internal_cc93b9ed3da883b12ad00c4bc5efef8a0bb20bac1e7eff6be759e9eeca3a9ebb->leave($__internal_cc93b9ed3da883b12ad00c4bc5efef8a0bb20bac1e7eff6be759e9eeca3a9ebb_prof);
+        $__internal_21e606df5a17b7830c1fdc4e395a04fe4eef843a86b0be8bc94b41a03916391a->leave($__internal_21e606df5a17b7830c1fdc4e395a04fe4eef843a86b0be8bc94b41a03916391a_prof);
 
     }
 
@@ -167,7 +173,7 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
 
     public function getDebugInfo()
     {
-        return array (  148 => 48,  135 => 41,  131 => 40,  127 => 39,  122 => 37,  117 => 35,  111 => 32,  107 => 31,  103 => 30,  99 => 29,  96 => 28,  92 => 27,  74 => 12,  66 => 7,  60 => 6,  48 => 4,  36 => 3,  11 => 1,);
+        return array (  154 => 49,  141 => 42,  137 => 41,  133 => 40,  128 => 38,  124 => 37,  119 => 35,  115 => 34,  109 => 31,  105 => 30,  101 => 29,  97 => 28,  94 => 27,  90 => 26,  72 => 11,  66 => 7,  60 => 6,  48 => 4,  36 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -186,7 +192,6 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
 {% block page_subtitle %}Listado de cuentas {% endblock %}
 
 {% block page_content %}
-{{ include ('layout/mensajes.html.twig')}}
 
 <div class=\"box box-primary\">
 <div style=\"width:90%; margin-left:5%; margin-top: 2% \">
@@ -215,11 +220,13 @@ class __TwigTemplate_98620c8fb7083feca916b37009899660755cff47d645cd7d69d19bfda6f
                 <td>
 
                 <button class=\"btn btn-info btn-sm\" data-toggle=\"modal\" data-target=\"#miventana{{ tipocuentum.idtipocuenta }}\">Mostrar</button>
+                <button class=\"btn btn-success btn-sm\" data-toggle=\"modal\" data-target=\"#mieditar{{ tipocuentum.idtipocuenta }}\">Editar</button>
 
                 {{ render(controller('AppBundle:Tipocuenta:show', { 'id' : tipocuentum.idtipocuenta } )) }}
+                {{ render(controller('AppBundle:Tipocuenta:edit', { 'id' : tipocuentum.idtipocuenta } )) }}
 
               <!--  <a href=\"{{ path('tipocuenta_show', { 'id': tipocuentum.idtipocuenta }) }}\" class=\"btn btn-info btn-sm\">Mostarar</a>-->
-                <a href=\"{{ path('tipocuenta_edit', { 'id': tipocuentum.idtipocuenta }) }}\" class=\"btn btn-success btn-sm\">edit</a>
+            <!--    <a href=\"{{ path('tipocuenta_edit', { 'id': tipocuentum.idtipocuenta }) }}\" class=\"btn btn-success btn-sm\">edit</a>-->
                 <a href=\"{{ path('tipocuenta_delete', { 'id': tipocuentum.idtipocuenta }) }}\" class=\"btn btn-danger btn-sm\">delete</a>
 
                 </td>

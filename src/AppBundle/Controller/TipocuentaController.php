@@ -49,8 +49,8 @@ class TipocuentaController extends Controller
             $em->persist($Tipocuenta);
             $em->flush($Tipocuenta);
 
-            $this->addFlash('message', 'Post Creado Exitosamente!');
-            return $this->redirectToRoute('tipocuenta_show');
+            $this->addFlash('success', '');
+            return $this->redirectToRoute('tipocuenta_index');
         }
 
         return $this->render('tipocuenta/newtipocuenta.html.twig', array(
@@ -90,9 +90,7 @@ class TipocuentaController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            $em = $this->getDoctrine()->getManager();
-            $em->flush();
-            $this->addFlash('message', 'Actualizado Correctamente!');
+            $this->addFlash('success', '');
 
             return $this->redirectToRoute('tipocuenta_index');
         }

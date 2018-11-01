@@ -7,109 +7,74 @@ class __TwigTemplate_77e17a86aeb1dc0590f27d77756976c4a726ea32b63629fbed272145e79
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("layout/base-layout.html.twig", ":tipocuenta:edittipocuenta.html.twig", 1);
-        $this->blocks = array(
-            'page_title' => array($this, 'block_page_title'),
-            'page_subtitle' => array($this, 'block_page_subtitle'),
-            'page_content' => array($this, 'block_page_content'),
-        );
-    }
+        $this->parent = false;
 
-    protected function doGetParent(array $context)
-    {
-        return "layout/base-layout.html.twig";
+        $this->blocks = array(
+        );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f77c0d3ccdd3e4ef290e181f3ca88c2274163982eeb0c1c008650ba84b5952f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f77c0d3ccdd3e4ef290e181f3ca88c2274163982eeb0c1c008650ba84b5952f2->enter($__internal_f77c0d3ccdd3e4ef290e181f3ca88c2274163982eeb0c1c008650ba84b5952f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:edittipocuenta.html.twig"));
+        $__internal_398516971e2370249185c6a0ec479b6efb772c8ddb01777776988e0922c1e268 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_398516971e2370249185c6a0ec479b6efb772c8ddb01777776988e0922c1e268->enter($__internal_398516971e2370249185c6a0ec479b6efb772c8ddb01777776988e0922c1e268_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:edittipocuenta.html.twig"));
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_f77c0d3ccdd3e4ef290e181f3ca88c2274163982eeb0c1c008650ba84b5952f2->leave($__internal_f77c0d3ccdd3e4ef290e181f3ca88c2274163982eeb0c1c008650ba84b5952f2_prof);
+        // line 1
+        echo "<div class=\"modal fade\" id=\"mieditar";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["tipocuenta"]) ? $context["tipocuenta"] : $this->getContext($context, "tipocuenta")), "idtipocuenta", array()), "html", null, true);
+        echo "\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+\t<div class=\"modal-dialog\">
+\t\t\t<div class=\"modal-content\">
 
-    }
+\t\t\t\t<div class=\"modal-header\">
+\t\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+\t\t\t\t\t<h4>Datos De Cuenta</h4>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"modal-body\">
 
-    // line 2
-    public function block_page_title($context, array $blocks = array())
-    {
-        $__internal_e1d0a8cb580b0835e421aa8b1eca4d908792d71bbf92bef974680d7628b58d42 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e1d0a8cb580b0835e421aa8b1eca4d908792d71bbf92bef974680d7628b58d42->enter($__internal_e1d0a8cb580b0835e421aa8b1eca4d908792d71bbf92bef974680d7628b58d42_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_title"));
-
-        echo " Tipo Cuenta | ";
-        
-        $__internal_e1d0a8cb580b0835e421aa8b1eca4d908792d71bbf92bef974680d7628b58d42->leave($__internal_e1d0a8cb580b0835e421aa8b1eca4d908792d71bbf92bef974680d7628b58d42_prof);
-
-    }
-
-    // line 3
-    public function block_page_subtitle($context, array $blocks = array())
-    {
-        $__internal_78944efa983e3b89cd2bb49c573f983688bd29b487621cf6e865e53843a4807d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_78944efa983e3b89cd2bb49c573f983688bd29b487621cf6e865e53843a4807d->enter($__internal_78944efa983e3b89cd2bb49c573f983688bd29b487621cf6e865e53843a4807d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_subtitle"));
-
-        echo "Modificar Cuenta ";
-        
-        $__internal_78944efa983e3b89cd2bb49c573f983688bd29b487621cf6e865e53843a4807d->leave($__internal_78944efa983e3b89cd2bb49c573f983688bd29b487621cf6e865e53843a4807d_prof);
-
-    }
-
-    // line 5
-    public function block_page_content($context, array $blocks = array())
-    {
-        $__internal_38c3c0411f2daf58c5d970255024395ec666224646dca527bdfdbc394d4b7062 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_38c3c0411f2daf58c5d970255024395ec666224646dca527bdfdbc394d4b7062->enter($__internal_38c3c0411f2daf58c5d970255024395ec666224646dca527bdfdbc394d4b7062_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
-
-        // line 6
-        echo "
-<div class=\"box box-primary\">
-<div style=\"width:80%; margin-left:8%; margin-top: 3% \">
-
+  <div class=\"list-group\">
+    <!--modal-->
 
     ";
-        // line 11
-        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_start');
+        // line 14
+        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_edit", array("id" => $this->getAttribute((isset($context["tipocuenta"]) ? $context["tipocuenta"] : $this->getContext($context, "tipocuenta")), "idtipocuenta", array()))), "method" => "POST"));
         echo "
 
     ";
-        // line 13
+        // line 16
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'errors');
         echo "
 
     ";
-        // line 15
+        // line 18
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "nombrecuenta", array()), 'row');
-        echo "
+        echo "<br>
     ";
-        // line 16
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "descripcion", array()), 'row');
-        echo "
-    ";
-        // line 17
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "estado", array()), 'row');
-        echo "
-
-<input type=\"submit\" value=\"Guardar\" class=\"btn btn-info btn-sm\" /> <a href=\"";
         // line 19
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tipocuenta_index");
-        echo "\" class=\"btn btn-success btn-sm\">Atras</a>
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "descripcion", array()), 'row');
+        echo "<br>
+    ";
+        // line 20
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "estado", array()), 'row');
+        echo "<br>
+
+    <input type=\"submit\" value=\"Guardar\" class=\"btn btn-info btn-sm\" />
 
     ";
-        // line 21
+        // line 24
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_end');
         echo "
+    </div>
 
-
-</div>
-</div>
-
-
-
+    <div class=\"modal-footer\">
+      <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Cerrar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 ";
         
-        $__internal_38c3c0411f2daf58c5d970255024395ec666224646dca527bdfdbc394d4b7062->leave($__internal_38c3c0411f2daf58c5d970255024395ec666224646dca527bdfdbc394d4b7062_prof);
+        $__internal_398516971e2370249185c6a0ec479b6efb772c8ddb01777776988e0922c1e268->leave($__internal_398516971e2370249185c6a0ec479b6efb772c8ddb01777776988e0922c1e268_prof);
 
     }
 
@@ -125,7 +90,7 @@ class __TwigTemplate_77e17a86aeb1dc0590f27d77756976c4a726ea32b63629fbed272145e79
 
     public function getDebugInfo()
     {
-        return array (  101 => 21,  96 => 19,  91 => 17,  87 => 16,  83 => 15,  78 => 13,  73 => 11,  66 => 6,  60 => 5,  48 => 3,  36 => 2,  11 => 1,);
+        return array (  64 => 24,  57 => 20,  53 => 19,  49 => 18,  44 => 16,  39 => 14,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -138,35 +103,39 @@ class __TwigTemplate_77e17a86aeb1dc0590f27d77756976c4a726ea32b63629fbed272145e79
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends \"layout/base-layout.html.twig\" %}
-{% block page_title %} Tipo Cuenta | {% endblock %}
-{% block page_subtitle %}Modificar Cuenta {% endblock %}
+        return new Twig_Source("<div class=\"modal fade\" id=\"mieditar{{ tipocuenta.idtipocuenta }}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+\t<div class=\"modal-dialog\">
+\t\t\t<div class=\"modal-content\">
 
-{% block page_content %}
+\t\t\t\t<div class=\"modal-header\">
+\t\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+\t\t\t\t\t<h4>Datos De Cuenta</h4>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"modal-body\">
 
-<div class=\"box box-primary\">
-<div style=\"width:80%; margin-left:8%; margin-top: 3% \">
+  <div class=\"list-group\">
+    <!--modal-->
 
-
-    {{ form_start(edit_form) }}
+    {{ form_start(edit_form, {'action': path('tipocuenta_edit', { 'id': tipocuenta.idtipocuenta }), 'method': 'POST'}) }}
 
     {{ form_errors(edit_form) }}
 
-    {{ form_row(edit_form.nombrecuenta) }}
-    {{ form_row(edit_form.descripcion) }}
-    {{ form_row(edit_form.estado) }}
+    {{ form_row(edit_form.nombrecuenta) }}<br>
+    {{ form_row(edit_form.descripcion) }}<br>
+    {{ form_row(edit_form.estado) }}<br>
 
-<input type=\"submit\" value=\"Guardar\" class=\"btn btn-info btn-sm\" /> <a href=\"{{ path('tipocuenta_index') }}\" class=\"btn btn-success btn-sm\">Atras</a>
+    <input type=\"submit\" value=\"Guardar\" class=\"btn btn-info btn-sm\" />
 
     {{ form_end(edit_form) }}
+    </div>
 
-
-</div>
-</div>
-
-
-
-{% endblock %}
+    <div class=\"modal-footer\">
+      <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Cerrar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 ", ":tipocuenta:edittipocuenta.html.twig", "C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/tipocuenta/edittipocuenta.html.twig");
     }
 }

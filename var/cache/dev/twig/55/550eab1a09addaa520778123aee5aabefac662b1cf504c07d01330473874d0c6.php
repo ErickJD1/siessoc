@@ -21,20 +21,20 @@ class __TwigTemplate_9fd4a8de6769ccc7c94b998047ecdb0f274bb2f54607217fe58e95b6de1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ec05896982b6f75eb14c99a0173d0dec3c779304cb0769cafbbc341da8c19208 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ec05896982b6f75eb14c99a0173d0dec3c779304cb0769cafbbc341da8c19208->enter($__internal_ec05896982b6f75eb14c99a0173d0dec3c779304cb0769cafbbc341da8c19208_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:newtipocuenta.html.twig"));
+        $__internal_c5ef64c0efde5170b6fc19a329b6e28bae5ce86f381a64e3a0ae863220ce4148 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c5ef64c0efde5170b6fc19a329b6e28bae5ce86f381a64e3a0ae863220ce4148->enter($__internal_c5ef64c0efde5170b6fc19a329b6e28bae5ce86f381a64e3a0ae863220ce4148_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:newtipocuenta.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ec05896982b6f75eb14c99a0173d0dec3c779304cb0769cafbbc341da8c19208->leave($__internal_ec05896982b6f75eb14c99a0173d0dec3c779304cb0769cafbbc341da8c19208_prof);
+        $__internal_c5ef64c0efde5170b6fc19a329b6e28bae5ce86f381a64e3a0ae863220ce4148->leave($__internal_c5ef64c0efde5170b6fc19a329b6e28bae5ce86f381a64e3a0ae863220ce4148_prof);
 
     }
 
     // line 3
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_de3345677a63b0d327e3a34947ab303a3cdd017d8c180f48e82da5f5d24ac376 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_de3345677a63b0d327e3a34947ab303a3cdd017d8c180f48e82da5f5d24ac376->enter($__internal_de3345677a63b0d327e3a34947ab303a3cdd017d8c180f48e82da5f5d24ac376_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_0e4c3bd5f85f71a916e10dd90a797ec8855e14a76a7d64daeb85258f07971baf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0e4c3bd5f85f71a916e10dd90a797ec8855e14a76a7d64daeb85258f07971baf->enter($__internal_0e4c3bd5f85f71a916e10dd90a797ec8855e14a76a7d64daeb85258f07971baf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 4
         echo "    <h1>Ingresar Tipo De Cuenta</h1>
@@ -63,7 +63,7 @@ class __TwigTemplate_9fd4a8de6769ccc7c94b998047ecdb0f274bb2f54607217fe58e95b6de1
     </ul>
 ";
         
-        $__internal_de3345677a63b0d327e3a34947ab303a3cdd017d8c180f48e82da5f5d24ac376->leave($__internal_de3345677a63b0d327e3a34947ab303a3cdd017d8c180f48e82da5f5d24ac376_prof);
+        $__internal_0e4c3bd5f85f71a916e10dd90a797ec8855e14a76a7d64daeb85258f07971baf->leave($__internal_0e4c3bd5f85f71a916e10dd90a797ec8855e14a76a7d64daeb85258f07971baf_prof);
 
     }
 

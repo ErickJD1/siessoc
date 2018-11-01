@@ -30,7 +30,6 @@
 
     {# --------------------------------------------------------------------------------------------- JAVASCRIPTS_HEAD #}
     {%  block javascripts_head %}
-        <script type="text/javascript" src="{{ asset('bundles/avanzuadmintheme/static/'~app.environment~'/scripts/modernizr.js') }}"></script>
         <!--[if lt IE 9]>
 
         <![endif]-->
@@ -68,6 +67,7 @@ desired effect
 -->
 
 <body class="{{ admin_skin|default('skin-blue')}} fixed sidebar-mini">
+
 <div class="wrapper">
     {% block avanzu_admin_header %}
         <header class="main-header">

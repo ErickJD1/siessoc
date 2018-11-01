@@ -21,20 +21,20 @@ class __TwigTemplate_7d2669ed6228ced05a7940e880960452b2e146d2f5bb9b616cc29803ef1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5f33fc9e276e1d660776fa58c23e0367bc6c5a83c3e360a88878c47d9f041dc9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5f33fc9e276e1d660776fa58c23e0367bc6c5a83c3e360a88878c47d9f041dc9->enter($__internal_5f33fc9e276e1d660776fa58c23e0367bc6c5a83c3e360a88878c47d9f041dc9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:edit.html.twig"));
+        $__internal_fafe443195f8d756fb877aab1d4d15fc58b4116d5f737250f535d5200751495a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fafe443195f8d756fb877aab1d4d15fc58b4116d5f737250f535d5200751495a->enter($__internal_fafe443195f8d756fb877aab1d4d15fc58b4116d5f737250f535d5200751495a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_5f33fc9e276e1d660776fa58c23e0367bc6c5a83c3e360a88878c47d9f041dc9->leave($__internal_5f33fc9e276e1d660776fa58c23e0367bc6c5a83c3e360a88878c47d9f041dc9_prof);
+        $__internal_fafe443195f8d756fb877aab1d4d15fc58b4116d5f737250f535d5200751495a->leave($__internal_fafe443195f8d756fb877aab1d4d15fc58b4116d5f737250f535d5200751495a_prof);
 
     }
 
     // line 4
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_a8fd5f19e11804ed475d859fda540368e29ffc37a506c8aaad8fe2480c731fbc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a8fd5f19e11804ed475d859fda540368e29ffc37a506c8aaad8fe2480c731fbc->enter($__internal_a8fd5f19e11804ed475d859fda540368e29ffc37a506c8aaad8fe2480c731fbc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_cea0c4bf5f244b5f43244954065430640303e2fa8a350825cef234c86721f9f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cea0c4bf5f244b5f43244954065430640303e2fa8a350825cef234c86721f9f6->enter($__internal_cea0c4bf5f244b5f43244954065430640303e2fa8a350825cef234c86721f9f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 5
         echo "    <h1>User edit</h1>
@@ -74,7 +74,7 @@ class __TwigTemplate_7d2669ed6228ced05a7940e880960452b2e146d2f5bb9b616cc29803ef1
     </ul>
 ";
         
-        $__internal_a8fd5f19e11804ed475d859fda540368e29ffc37a506c8aaad8fe2480c731fbc->leave($__internal_a8fd5f19e11804ed475d859fda540368e29ffc37a506c8aaad8fe2480c731fbc_prof);
+        $__internal_cea0c4bf5f244b5f43244954065430640303e2fa8a350825cef234c86721f9f6->leave($__internal_cea0c4bf5f244b5f43244954065430640303e2fa8a350825cef234c86721f9f6_prof);
 
     }
 

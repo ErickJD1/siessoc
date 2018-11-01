@@ -32,11 +32,13 @@
                 <td>
 
                 <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#miventana{{ tipocuentum.idtipocuenta }}">Mostrar</button>
+                <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#mieditar{{ tipocuentum.idtipocuenta }}">Editar</button>
 
                 {{ render(controller('AppBundle:Tipocuenta:show', { 'id' : tipocuentum.idtipocuenta } )) }}
+                {{ render(controller('AppBundle:Tipocuenta:edit', { 'id' : tipocuentum.idtipocuenta } )) }}
 
               <!--  <a href="{{ path('tipocuenta_show', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-info btn-sm">Mostarar</a>-->
-                <a href="{{ path('tipocuenta_edit', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-success btn-sm">edit</a>
+            <!--    <a href="{{ path('tipocuenta_edit', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-success btn-sm">edit</a>-->
                 <a href="{{ path('tipocuenta_delete', { 'id': tipocuentum.idtipocuenta }) }}" class="btn btn-danger btn-sm">delete</a>
 
                 </td>
@@ -48,9 +50,4 @@
     </table>
     </div>
     </div>
-    
-    {% for success_message in app.session.flashbag.get('message') %}
-    <div class="alert alert-success">{{ success_message }}</div>
-    {% endfor %}
-
 {% endblock %}

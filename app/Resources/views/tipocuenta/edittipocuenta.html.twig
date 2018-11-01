@@ -1,29 +1,33 @@
-{% extends "layout/base-layout.html.twig" %}
-{% block page_title %} Tipo Cuenta | {% endblock %}
-{% block page_subtitle %}Modificar Cuenta {% endblock %}
+<div class="modal fade" id="mieditar{{ tipocuenta.idtipocuenta }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+			<div class="modal-content">
 
-{% block page_content %}
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4>Datos De Cuenta</h4>
+				</div>
+				<div class="modal-body">
 
-<div class="box box-primary">
-<div style="width:80%; margin-left:8%; margin-top: 3% ">
+  <div class="list-group">
+    <!--modal-->
 
-
-    {{ form_start(edit_form) }}
+    {{ form_start(edit_form, {'action': path('tipocuenta_edit', { 'id': tipocuenta.idtipocuenta }), 'method': 'POST'}) }}
 
     {{ form_errors(edit_form) }}
 
-    {{ form_row(edit_form.nombrecuenta) }}
-    {{ form_row(edit_form.descripcion) }}
-    {{ form_row(edit_form.estado) }}
+    {{ form_row(edit_form.nombrecuenta) }}<br>
+    {{ form_row(edit_form.descripcion) }}<br>
+    {{ form_row(edit_form.estado) }}<br>
 
-<input type="submit" value="Guardar" class="btn btn-info btn-sm" /> <a href="{{ path('tipocuenta_index') }}" class="btn btn-success btn-sm">Atras</a>
+    <input type="submit" value="Guardar" class="btn btn-info btn-sm" />
 
     {{ form_end(edit_form) }}
+    </div>
 
-
-</div>
-</div>
-
-
-
-{% endblock %}
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

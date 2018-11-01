@@ -197,7 +197,6 @@
   ':layout:base-layout.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/base-layout.html.twig',
   ':layout:breadcrumb.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/breadcrumb.html.twig',
   ':layout:loginBase.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/loginBase.html.twig',
-  ':layout:mensajes.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/mensajes.html.twig',
   ':layout:user-panel.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/user-panel.html.twig',
   ':layout:user.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/layout/user.html.twig',
   ':tipocuenta:edittipocuenta.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/tipocuenta/edittipocuenta.html.twig',

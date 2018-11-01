@@ -15,7 +15,7 @@ class TipocuentaType extends AbstractType
     {
         $builder->add('nombrecuenta')->add('descripcion')->add('estado')        ;
     }
-    
+
     /**
      * {@inheritdoc}
      */

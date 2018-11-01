@@ -16,8 +16,8 @@ class __TwigTemplate_3ebccc6e21e6fa8f60e8a5800bb16156fd35fb3ead68b4dd7ab609a65bc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_938343a7628d35cd1b9e548517c9158ef222e5ddfd2e5837582100d865724eb0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_938343a7628d35cd1b9e548517c9158ef222e5ddfd2e5837582100d865724eb0->enter($__internal_938343a7628d35cd1b9e548517c9158ef222e5ddfd2e5837582100d865724eb0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Security/login.html.twig"));
+        $__internal_0de7540af0feec6eca7e4f21e702f3d233945ebbe17f2b4448eaaa32dbe87072 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0de7540af0feec6eca7e4f21e702f3d233945ebbe17f2b4448eaaa32dbe87072->enter($__internal_0de7540af0feec6eca7e4f21e702f3d233945ebbe17f2b4448eaaa32dbe87072_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Security/login.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -106,19 +106,19 @@ class __TwigTemplate_3ebccc6e21e6fa8f60e8a5800bb16156fd35fb3ead68b4dd7ab609a65bc
 </body>
 </html>";
         
-        $__internal_938343a7628d35cd1b9e548517c9158ef222e5ddfd2e5837582100d865724eb0->leave($__internal_938343a7628d35cd1b9e548517c9158ef222e5ddfd2e5837582100d865724eb0_prof);
+        $__internal_0de7540af0feec6eca7e4f21e702f3d233945ebbe17f2b4448eaaa32dbe87072->leave($__internal_0de7540af0feec6eca7e4f21e702f3d233945ebbe17f2b4448eaaa32dbe87072_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_64fb5715e75c251977de7e8d07775effe3c9d46b2ff77092f8a178bceff3e525 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_64fb5715e75c251977de7e8d07775effe3c9d46b2ff77092f8a178bceff3e525->enter($__internal_64fb5715e75c251977de7e8d07775effe3c9d46b2ff77092f8a178bceff3e525_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_9586799009063c7e0fbb25b45e78db3d4fb4afd98b9e8ca05e2e25b40463e774 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9586799009063c7e0fbb25b45e78db3d4fb4afd98b9e8ca05e2e25b40463e774->enter($__internal_9586799009063c7e0fbb25b45e78db3d4fb4afd98b9e8ca05e2e25b40463e774_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo " Log in ";
         
-        $__internal_64fb5715e75c251977de7e8d07775effe3c9d46b2ff77092f8a178bceff3e525->leave($__internal_64fb5715e75c251977de7e8d07775effe3c9d46b2ff77092f8a178bceff3e525_prof);
+        $__internal_9586799009063c7e0fbb25b45e78db3d4fb4afd98b9e8ca05e2e25b40463e774->leave($__internal_9586799009063c7e0fbb25b45e78db3d4fb4afd98b9e8ca05e2e25b40463e774_prof);
 
     }
 

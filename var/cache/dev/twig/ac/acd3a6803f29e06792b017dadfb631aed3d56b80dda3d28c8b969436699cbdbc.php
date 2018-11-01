@@ -15,8 +15,8 @@ class __TwigTemplate_14c1d200753c54e7f6f2d2cff1e56364117b173b918ef09bdb066ac9363
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_119f765f2e77d85dfc7cb2883b4578ad51901bd8914cc4de9091da57985a5d44 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_119f765f2e77d85dfc7cb2883b4578ad51901bd8914cc4de9091da57985a5d44->enter($__internal_119f765f2e77d85dfc7cb2883b4578ad51901bd8914cc4de9091da57985a5d44_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:showtipocuenta.html.twig"));
+        $__internal_e32a85723982965e7b10d2d37d9b7f4ead015da812f30e027e59e2c70b7c83c6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e32a85723982965e7b10d2d37d9b7f4ead015da812f30e027e59e2c70b7c83c6->enter($__internal_e32a85723982965e7b10d2d37d9b7f4ead015da812f30e027e59e2c70b7c83c6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":tipocuenta:showtipocuenta.html.twig"));
 
         // line 1
         echo "<div class=\"modal fade\" id=\"miventana";
@@ -63,7 +63,7 @@ class __TwigTemplate_14c1d200753c54e7f6f2d2cff1e56364117b173b918ef09bdb066ac9363
 </div>
 ";
         
-        $__internal_119f765f2e77d85dfc7cb2883b4578ad51901bd8914cc4de9091da57985a5d44->leave($__internal_119f765f2e77d85dfc7cb2883b4578ad51901bd8914cc4de9091da57985a5d44_prof);
+        $__internal_e32a85723982965e7b10d2d37d9b7f4ead015da812f30e027e59e2c70b7c83c6->leave($__internal_e32a85723982965e7b10d2d37d9b7f4ead015da812f30e027e59e2c70b7c83c6_prof);
 
     }
 

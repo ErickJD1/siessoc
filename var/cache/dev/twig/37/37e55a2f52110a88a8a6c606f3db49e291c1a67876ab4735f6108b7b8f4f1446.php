@@ -15,8 +15,8 @@ class __TwigTemplate_6c9cd6de7ad3aee3c379d6ffbc4d702c633bb3c6f820f32705ef71e69e1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1704a3f64fd41e3b6b027bd713087ad013f79b4ecaf4a96ef348665f91f7b3a2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1704a3f64fd41e3b6b027bd713087ad013f79b4ecaf4a96ef348665f91f7b3a2->enter($__internal_1704a3f64fd41e3b6b027bd713087ad013f79b4ecaf4a96ef348665f91f7b3a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Breadcrumb/breadcrumb.html.twig"));
+        $__internal_23f128aa5b995e8a4b07aa21adb59810f429eeb095cf0cd64728672b133c05b8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_23f128aa5b995e8a4b07aa21adb59810f429eeb095cf0cd64728672b133c05b8->enter($__internal_23f128aa5b995e8a4b07aa21adb59810f429eeb095cf0cd64728672b133c05b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Breadcrumb/breadcrumb.html.twig"));
 
         // line 1
         echo "<ol class=\"breadcrumb\">
@@ -60,7 +60,7 @@ class __TwigTemplate_6c9cd6de7ad3aee3c379d6ffbc4d702c633bb3c6f820f32705ef71e69e1
         echo "</li>
 </ol>";
         
-        $__internal_1704a3f64fd41e3b6b027bd713087ad013f79b4ecaf4a96ef348665f91f7b3a2->leave($__internal_1704a3f64fd41e3b6b027bd713087ad013f79b4ecaf4a96ef348665f91f7b3a2_prof);
+        $__internal_23f128aa5b995e8a4b07aa21adb59810f429eeb095cf0cd64728672b133c05b8->leave($__internal_23f128aa5b995e8a4b07aa21adb59810f429eeb095cf0cd64728672b133c05b8_prof);
 
     }
 
