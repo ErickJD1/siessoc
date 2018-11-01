@@ -125,4 +125,10 @@ class Requisito
     {
         return $this->idrequisito;
     }
+
+
+    public function __toString(){
+
+        return $this->nombre;
+    }
 }

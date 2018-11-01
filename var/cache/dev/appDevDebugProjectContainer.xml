@@ -416,15 +416,15 @@
     <parameter key="assetic.read_from">C:\xampp\htdocs\siessoc\app/../web</parameter>
     <parameter key="assetic.write_to">C:\xampp\htdocs\siessoc\app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.EXE</parameter>
-    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
+    <parameter key="assetic.java.bin">C:\ProgramData\Oracle\Java\javapath\java.EXE</parameter>
+    <parameter key="assetic.node.bin">C:\Program Files\nodejs\\node.EXE</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.reactjsx.bin">/usr/bin/jsx</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
     <parameter key="assetic.filter.uglifyjs2.class">Assetic\Filter\UglifyJs2Filter</parameter>
     <parameter key="assetic.filter.uglifyjs2.bin">C:\xampp\htdocs\siessoc\app/Resources/node_modules/.bin/uglifyjs</parameter>
-    <parameter key="assetic.filter.uglifyjs2.node">/usr/bin/node</parameter>
+    <parameter key="assetic.filter.uglifyjs2.node">C:\Program Files\nodejs\\node.EXE</parameter>
     <parameter key="assetic.filter.uglifyjs2.timeout">null</parameter>
     <parameter key="assetic.filter.uglifyjs2.node_paths" type="collection"/>
     <parameter key="assetic.filter.uglifyjs2.compress">false</parameter>
@@ -436,7 +436,7 @@
     <parameter key="assetic.filter.uglifyjs2.defines" type="collection"/>
     <parameter key="assetic.filter.uglifycss.class">Assetic\Filter\UglifyCssFilter</parameter>
     <parameter key="assetic.filter.uglifycss.bin">C:\xampp\htdocs\siessoc\app/Resources/node_modules/.bin/uglifycss</parameter>
-    <parameter key="assetic.filter.uglifycss.node">/usr/bin/node</parameter>
+    <parameter key="assetic.filter.uglifycss.node">C:\Program Files\nodejs\\node.EXE</parameter>
     <parameter key="assetic.filter.uglifycss.timeout">null</parameter>
     <parameter key="assetic.filter.uglifycss.node_paths" type="collection"/>
     <parameter key="assetic.filter.uglifycss.expand_vars">false</parameter>
@@ -872,7 +872,7 @@
                   <tag name="cache.pool"/>
                   <argument>iA0Q65w9KU</argument>
                   <argument>0</argument>
-                  <argument>H2R8RQ6rB18895cLwQqN-Q</argument>
+                  <argument>8nBxtyWL3cthu0rWRZDMBA</argument>
                   <argument>C:\xampp\htdocs\siessoc\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -885,7 +885,7 @@
                   <tag name="cache.pool"/>
                   <argument>NZ1uYKNil3</argument>
                   <argument>0</argument>
-                  <argument>H2R8RQ6rB18895cLwQqN-Q</argument>
+                  <argument>8nBxtyWL3cthu0rWRZDMBA</argument>
                   <argument>C:\xampp\htdocs\siessoc\var\cache\dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1571,7 +1571,7 @@
       <tag name="cache.pool"/>
       <argument>lS+TLeNJgl</argument>
       <argument>0</argument>
-      <argument>H2R8RQ6rB18895cLwQqN-Q</argument>
+      <argument>8nBxtyWL3cthu0rWRZDMBA</argument>
       <argument>C:\xampp\htdocs\siessoc\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -2457,7 +2457,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5bd1468fcf4567.47005388</argument>
+            <argument>5bd15016ec9da5.93702800</argument>
           </service>
         </argument>
       </argument>
@@ -2763,7 +2763,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5bd1468fcf4567.47005388</argument>
+            <argument>5bd15016ec9da5.93702800</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3965,7 +3965,7 @@
     <service id="assetic.filter.uglifyjs2" class="Assetic\Filter\UglifyJs2Filter">
       <tag name="assetic.filter" alias="uglifyjs2"/>
       <argument>C:\xampp\htdocs\siessoc\app/Resources/node_modules/.bin/uglifyjs</argument>
-      <argument>/usr/bin/node</argument>
+      <argument>C:\Program Files\nodejs\\node.EXE</argument>
       <call method="setTimeout">
         <argument>null</argument>
       </call>
@@ -3997,7 +3997,7 @@
     <service id="assetic.filter.uglifycss" class="Assetic\Filter\UglifyCssFilter">
       <tag name="assetic.filter" alias="uglifycss"/>
       <argument>C:\xampp\htdocs\siessoc\app/Resources/node_modules/.bin/uglifycss</argument>
-      <argument>/usr/bin/node</argument>
+      <argument>C:\Program Files\nodejs\\node.EXE</argument>
       <call method="setTimeout">
         <argument>null</argument>
       </call>

@@ -15,8 +15,8 @@ class __TwigTemplate_752925db74e8423aec4483f8cb672051816c203c3fe1457fb5c4373d33e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_219208cee16e6c61365b6a2c0e4ccb91b149465069d194e868182318fc2c25d3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_219208cee16e6c61365b6a2c0e4ccb91b149465069d194e868182318fc2c25d3->enter($__internal_219208cee16e6c61365b6a2c0e4ccb91b149465069d194e868182318fc2c25d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/new.html.twig"));
+        $__internal_0cd02f684263dd4ee17a343880cbba6c9ef67ea1070455bd4d559f671ed630e3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0cd02f684263dd4ee17a343880cbba6c9ef67ea1070455bd4d559f671ed630e3->enter($__internal_0cd02f684263dd4ee17a343880cbba6c9ef67ea1070455bd4d559f671ed630e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/new.html.twig"));
 
         // line 1
         echo "<div class=\"modal fade\" id=\"create1\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
@@ -37,7 +37,7 @@ class __TwigTemplate_752925db74e8423aec4483f8cb672051816c203c3fe1457fb5c4373d33e
                             <div class=\"container\"  style=\"width: 75%; margin-top: 3%; margin-bottom: 3%\">
                                 ";
         // line 17
-        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_new"), "method" => "POST"));
+        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Actividad_new"), "method" => "POST"));
         echo "
                                 ";
         // line 18
@@ -72,7 +72,7 @@ class __TwigTemplate_752925db74e8423aec4483f8cb672051816c203c3fe1457fb5c4373d33e
     </div>
 ";
         
-        $__internal_219208cee16e6c61365b6a2c0e4ccb91b149465069d194e868182318fc2c25d3->leave($__internal_219208cee16e6c61365b6a2c0e4ccb91b149465069d194e868182318fc2c25d3_prof);
+        $__internal_0cd02f684263dd4ee17a343880cbba6c9ef67ea1070455bd4d559f671ed630e3->leave($__internal_0cd02f684263dd4ee17a343880cbba6c9ef67ea1070455bd4d559f671ed630e3_prof);
 
     }
 
@@ -117,7 +117,7 @@ class __TwigTemplate_752925db74e8423aec4483f8cb672051816c203c3fe1457fb5c4373d33e
 
                        <div class=\"box box-success\" style=\"width: 100%\">
                             <div class=\"container\"  style=\"width: 75%; margin-top: 3%; margin-bottom: 3%\">
-                                {{ form_start(form, {'action': path('user_new'), 'method': 'POST'}) }}
+                                {{ form_start(form, {'action': path('Actividad_new'), 'method': 'POST'}) }}
                                 {{ form_widget(form) }}
                                 <input class=\"btn btn-success btn-xl\" type=\"submit\" value=\"Create\" />
                                 {{ form_end(form) }}
