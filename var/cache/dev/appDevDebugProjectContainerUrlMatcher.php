@@ -167,21 +167,33 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::indexAction',  '_route' => 'homepage',);
         }
 
-        if (0 === strpos($pathinfo, '/d')) {
-            // admin_dashboard
-            if ($pathinfo === '/dashboard') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::dashboardAction',  '_route' => 'admin_dashboard',);
+        // admin_dashboard
+        if ($pathinfo === '/dashboard') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::dashboardAction',  '_route' => 'admin_dashboard',);
+        }
+
+        // web_index
+        if (rtrim($pathinfo, '/') === '/webSite') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_web_index;
             }
 
-            // avanzu_admin_home
-            if (rtrim($pathinfo, '/') === '/demo-admin') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'avanzu_admin_home');
-                }
-
-                return array (  '_controller' => 'Avanzu\\AdminThemeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'avanzu_admin_home',);
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'web_index');
             }
 
+            return array (  '_controller' => 'AppBundle\\Controller\\WebSiteController::webAction',  '_route' => 'web_index',);
+        }
+        not_web_index:
+
+        // avanzu_admin_home
+        if (rtrim($pathinfo, '/') === '/demo-admin') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'avanzu_admin_home');
+            }
+
+            return array (  '_controller' => 'Avanzu\\AdminThemeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'avanzu_admin_home',);
         }
 
         // avanzu_admin_logout
