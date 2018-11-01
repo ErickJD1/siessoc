@@ -90,7 +90,11 @@ class TipocuentaController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('tipocuenta_edit', array('id' => $Tipocuenta->getId()));
+            $em = $this->getDoctrine()->getManager();
+            $em->flush();
+            $this->addFlash('message', 'Actualizado Correctamente!');
+
+            return $this->redirectToRoute('tipocuenta_index');
         }
 
         return $this->render('tipocuenta/edittipocuenta.html.twig', array(

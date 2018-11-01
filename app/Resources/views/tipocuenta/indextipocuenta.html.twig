@@ -1,13 +1,14 @@
 {% extends "layout/base-layout.html.twig" %}
+
 {% block page_title %} Tipo Cuenta | {% endblock %}
 {% block page_subtitle %}Listado de cuentas {% endblock %}
 
 {% block page_content %}
+{{ include ('layout/mensajes.html.twig')}}
 
 <div class="box box-primary">
-<div style="width:95%; margin-left:5%; margin-top: 2% ">
+<div style="width:90%; margin-left:5%; margin-top: 2% ">
 
-<div class="container">
     <a href="{{ path('tipocuenta_new') }}" class="btn btn-primary btn-sm">Creat Tipo De Cuenta</a>
     <hr>
 
