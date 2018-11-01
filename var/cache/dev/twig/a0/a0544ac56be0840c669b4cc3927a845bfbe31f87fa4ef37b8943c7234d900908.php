@@ -15,8 +15,8 @@ class __TwigTemplate_c8ee3e80bc982fbc94ac4dc7dbc19c535c58da967786b17935ba31a38e8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4d6b9d144abdffa26bb80e14dd157d5e143bead9576289a38dd02d7cd8e0751b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4d6b9d144abdffa26bb80e14dd157d5e143bead9576289a38dd02d7cd8e0751b->enter($__internal_4d6b9d144abdffa26bb80e14dd157d5e143bead9576289a38dd02d7cd8e0751b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:new.html.twig"));
+        $__internal_d6a4ca6095968c625e05a9c9847559a5defb611e271f55d1accd6168ea9bb23a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d6a4ca6095968c625e05a9c9847559a5defb611e271f55d1accd6168ea9bb23a->enter($__internal_d6a4ca6095968c625e05a9c9847559a5defb611e271f55d1accd6168ea9bb23a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:new.html.twig"));
 
         // line 1
         echo "<div class=\"modal fade\" id=\"create1\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
@@ -30,29 +30,28 @@ class __TwigTemplate_c8ee3e80bc982fbc94ac4dc7dbc19c535c58da967786b17935ba31a38e8
             <div class=\"modal-body\">
 
                 <div class=\"list-group\">
-                    <a herf=\"#\" class=\"\"list-group-item active\">
                        <!--modal-->
 
                        <div class=\"box box-success\" style=\"width: 100%\">
                             <div class=\"container\"  style=\"width: 75%; margin-top: 3%; margin-bottom: 3%\">
                                 ";
-        // line 17
+        // line 16
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_new"), "method" => "POST"));
         echo "
                                 ";
-        // line 18
+        // line 17
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
                                 <input class=\"btn btn-success btn-xl\" type=\"submit\" value=\"Create\" />
                                 ";
-        // line 20
+        // line 19
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
                                 </br>
                                 <ul>
                                     <li>
                                         <a href=\"";
-        // line 24
+        // line 23
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
         echo "\">Back to the list</a>
                                     </li>
@@ -72,7 +71,7 @@ class __TwigTemplate_c8ee3e80bc982fbc94ac4dc7dbc19c535c58da967786b17935ba31a38e8
     </div>
 ";
         
-        $__internal_4d6b9d144abdffa26bb80e14dd157d5e143bead9576289a38dd02d7cd8e0751b->leave($__internal_4d6b9d144abdffa26bb80e14dd157d5e143bead9576289a38dd02d7cd8e0751b_prof);
+        $__internal_d6a4ca6095968c625e05a9c9847559a5defb611e271f55d1accd6168ea9bb23a->leave($__internal_d6a4ca6095968c625e05a9c9847559a5defb611e271f55d1accd6168ea9bb23a_prof);
 
     }
 
@@ -88,7 +87,7 @@ class __TwigTemplate_c8ee3e80bc982fbc94ac4dc7dbc19c535c58da967786b17935ba31a38e8
 
     public function getDebugInfo()
     {
-        return array (  56 => 24,  49 => 20,  44 => 18,  40 => 17,  22 => 1,);
+        return array (  55 => 23,  48 => 19,  43 => 17,  39 => 16,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -112,7 +111,6 @@ class __TwigTemplate_c8ee3e80bc982fbc94ac4dc7dbc19c535c58da967786b17935ba31a38e8
             <div class=\"modal-body\">
 
                 <div class=\"list-group\">
-                    <a herf=\"#\" class=\"\"list-group-item active\">
                        <!--modal-->
 
                        <div class=\"box box-success\" style=\"width: 100%\">

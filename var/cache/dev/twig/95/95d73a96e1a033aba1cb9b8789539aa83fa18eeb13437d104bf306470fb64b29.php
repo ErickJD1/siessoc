@@ -15,8 +15,8 @@ class __TwigTemplate_0d2ec227217274d9bd8388987ddcd89b871da01200fc22815dc3f09d988
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c7dd74e69a06ab22020a8f6b184e9957edb0f675bbf688c5250e16c492750cfe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c7dd74e69a06ab22020a8f6b184e9957edb0f675bbf688c5250e16c492750cfe->enter($__internal_c7dd74e69a06ab22020a8f6b184e9957edb0f675bbf688c5250e16c492750cfe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Navbar/tasks.html.twig"));
+        $__internal_a35f19268d63cbe2dd2b9c6c5fec511b2f62ebc7060b21837c6fa562d1b215d7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a35f19268d63cbe2dd2b9c6c5fec511b2f62ebc7060b21837c6fa562d1b215d7->enter($__internal_a35f19268d63cbe2dd2b9c6c5fec511b2f62ebc7060b21837c6fa562d1b215d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Navbar/tasks.html.twig"));
 
         // line 1
         echo "<!-- Tasks: style can be found in dropdown.less -->
@@ -99,7 +99,7 @@ class __TwigTemplate_0d2ec227217274d9bd8388987ddcd89b871da01200fc22815dc3f09d988
     </ul>
 </li>";
         
-        $__internal_c7dd74e69a06ab22020a8f6b184e9957edb0f675bbf688c5250e16c492750cfe->leave($__internal_c7dd74e69a06ab22020a8f6b184e9957edb0f675bbf688c5250e16c492750cfe_prof);
+        $__internal_a35f19268d63cbe2dd2b9c6c5fec511b2f62ebc7060b21837c6fa562d1b215d7->leave($__internal_a35f19268d63cbe2dd2b9c6c5fec511b2f62ebc7060b21837c6fa562d1b215d7_prof);
 
     }
 

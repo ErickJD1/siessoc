@@ -15,8 +15,8 @@ class __TwigTemplate_8e47d10977380e5778684a022757f7ee40ba99e4e24177f87096e19ca03
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c8797cf9fa7f64fc7586f711407557f7850758ecd80c46357d1da95c3bc528c6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c8797cf9fa7f64fc7586f711407557f7850758ecd80c46357d1da95c3bc528c6->enter($__internal_c8797cf9fa7f64fc7586f711407557f7850758ecd80c46357d1da95c3bc528c6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Sidebar/menu.html.twig"));
+        $__internal_e5427fecc191390589424e2511945082c874b9a7785deff5a893cf665333ba0d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e5427fecc191390589424e2511945082c874b9a7785deff5a893cf665333ba0d->enter($__internal_e5427fecc191390589424e2511945082c874b9a7785deff5a893cf665333ba0d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Sidebar/menu.html.twig"));
 
         // line 1
         echo "<!-- sidebar menu: : style can be found in sidebar.less -->
@@ -42,7 +42,7 @@ class __TwigTemplate_8e47d10977380e5778684a022757f7ee40ba99e4e24177f87096e19ca03
         // line 7
         echo "</ul>";
         
-        $__internal_c8797cf9fa7f64fc7586f711407557f7850758ecd80c46357d1da95c3bc528c6->leave($__internal_c8797cf9fa7f64fc7586f711407557f7850758ecd80c46357d1da95c3bc528c6_prof);
+        $__internal_e5427fecc191390589424e2511945082c874b9a7785deff5a893cf665333ba0d->leave($__internal_e5427fecc191390589424e2511945082c874b9a7785deff5a893cf665333ba0d_prof);
 
     }
 

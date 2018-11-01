@@ -15,8 +15,8 @@ class __TwigTemplate_8db9313982ed460f968aad00a446be90a31b08c0c3cdebda2467c0c29f7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cf4eb45cd67eaa505bb0328b72442da6ca88486ed2e67cd425fa14acb7acd3d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cf4eb45cd67eaa505bb0328b72442da6ca88486ed2e67cd425fa14acb7acd3d8->enter($__internal_cf4eb45cd67eaa505bb0328b72442da6ca88486ed2e67cd425fa14acb7acd3d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@IvoryCKEditor/Form/ckeditor_widget.html.php"));
+        $__internal_c745c1062ca67ff800ba22422c267238c4d53b3851777d18bd93a1059db4ca08 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c745c1062ca67ff800ba22422c267238c4d53b3851777d18bd93a1059db4ca08->enter($__internal_c745c1062ca67ff800ba22422c267238c4d53b3851777d18bd93a1059db4ca08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@IvoryCKEditor/Form/ckeditor_widget.html.php"));
 
         // line 1
         echo "<textarea <?php echo \$view['form']->block(\$form, 'attributes') ?>><?php echo htmlspecialchars(\$value) ?></textarea>
@@ -26,7 +26,7 @@ class __TwigTemplate_8db9313982ed460f968aad00a446be90a31b08c0c3cdebda2467c0c29f7
 <?php endif; ?>
 ";
         
-        $__internal_cf4eb45cd67eaa505bb0328b72442da6ca88486ed2e67cd425fa14acb7acd3d8->leave($__internal_cf4eb45cd67eaa505bb0328b72442da6ca88486ed2e67cd425fa14acb7acd3d8_prof);
+        $__internal_c745c1062ca67ff800ba22422c267238c4d53b3851777d18bd93a1059db4ca08->leave($__internal_c745c1062ca67ff800ba22422c267238c4d53b3851777d18bd93a1059db4ca08_prof);
 
     }
 

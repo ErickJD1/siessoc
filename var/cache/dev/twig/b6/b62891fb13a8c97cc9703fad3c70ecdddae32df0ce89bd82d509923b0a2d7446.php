@@ -15,8 +15,8 @@ class __TwigTemplate_84e12d906dd071b618a66952ddda2dbba704404c081c3e3656b344e5fc8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_20c823e30d38763641cbec9daef5be3ae5ea310c6a5e4dc22f8fe4b69f307f09 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_20c823e30d38763641cbec9daef5be3ae5ea310c6a5e4dc22f8fe4b69f307f09->enter($__internal_20c823e30d38763641cbec9daef5be3ae5ea310c6a5e4dc22f8fe4b69f307f09_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SalexUser/Profile/edit_content.html.twig"));
+        $__internal_4856a78388e9094b5574ce02a559e049e2940101613050a3882faf526bac4880 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4856a78388e9094b5574ce02a559e049e2940101613050a3882faf526bac4880->enter($__internal_4856a78388e9094b5574ce02a559e049e2940101613050a3882faf526bac4880_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SalexUser/Profile/edit_content.html.twig"));
 
         // line 2
         echo "
@@ -39,7 +39,7 @@ class __TwigTemplate_84e12d906dd071b618a66952ddda2dbba704404c081c3e3656b344e5fc8
         <a class=\"btn btn-danger pull-right\" href=\"";
         // line 10
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_show");
-        echo "\">Cancel </a>
+        echo "\">Cancel</a>
     </div>
     <!-- End of box-footer-->
 ";
@@ -48,7 +48,7 @@ class __TwigTemplate_84e12d906dd071b618a66952ddda2dbba704404c081c3e3656b344e5fc8
         echo "
 ";
         
-        $__internal_20c823e30d38763641cbec9daef5be3ae5ea310c6a5e4dc22f8fe4b69f307f09->leave($__internal_20c823e30d38763641cbec9daef5be3ae5ea310c6a5e4dc22f8fe4b69f307f09_prof);
+        $__internal_4856a78388e9094b5574ce02a559e049e2940101613050a3882faf526bac4880->leave($__internal_4856a78388e9094b5574ce02a559e049e2940101613050a3882faf526bac4880_prof);
 
     }
 
@@ -86,7 +86,7 @@ class __TwigTemplate_84e12d906dd071b618a66952ddda2dbba704404c081c3e3656b344e5fc8
     <!-- End of box-body-->
     <div class=\"box-footer\">
         <input type=\"submit\" value=\"{{ 'profile.edit.submit'|trans }} profile\" name=\"submit\" class=\"btn btn-success\" />
-        <a class=\"btn btn-danger pull-right\" href=\"{{ path('fos_user_profile_show') }}\">Cancel </a>
+        <a class=\"btn btn-danger pull-right\" href=\"{{ path('fos_user_profile_show') }}\">Cancel</a>
     </div>
     <!-- End of box-footer-->
 {{ form_end(form) }}

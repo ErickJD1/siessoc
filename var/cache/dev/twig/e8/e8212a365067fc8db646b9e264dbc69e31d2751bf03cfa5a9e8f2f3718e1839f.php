@@ -15,8 +15,8 @@ class __TwigTemplate_3479e0e8ec68d88973cd258eb251d2d7a0115dd8dc6fffc6145005f97ad
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f2edcd2bf3f5b391528f6a9c95efcc75d40a9bb4b677ecc8e2b4d259616eaa34 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f2edcd2bf3f5b391528f6a9c95efcc75d40a9bb4b677ecc8e2b4d259616eaa34->enter($__internal_f2edcd2bf3f5b391528f6a9c95efcc75d40a9bb4b677ecc8e2b4d259616eaa34_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "KnpPaginatorBundle:Pagination:twitter_bootstrap_v4_pagination.html.twig"));
+        $__internal_504a2b540556f68dcf3028ba0405255b38bdfa1d30c568961b0e1a85ff4697ac = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_504a2b540556f68dcf3028ba0405255b38bdfa1d30c568961b0e1a85ff4697ac->enter($__internal_504a2b540556f68dcf3028ba0405255b38bdfa1d30c568961b0e1a85ff4697ac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "KnpPaginatorBundle:Pagination:twitter_bootstrap_v4_pagination.html.twig"));
 
         // line 12
         if (((isset($context["pageCount"]) ? $context["pageCount"] : $this->getContext($context, "pageCount")) > 1)) {
@@ -201,7 +201,7 @@ class __TwigTemplate_3479e0e8ec68d88973cd258eb251d2d7a0115dd8dc6fffc6145005f97ad
 ";
         }
         
-        $__internal_f2edcd2bf3f5b391528f6a9c95efcc75d40a9bb4b677ecc8e2b4d259616eaa34->leave($__internal_f2edcd2bf3f5b391528f6a9c95efcc75d40a9bb4b677ecc8e2b4d259616eaa34_prof);
+        $__internal_504a2b540556f68dcf3028ba0405255b38bdfa1d30c568961b0e1a85ff4697ac->leave($__internal_504a2b540556f68dcf3028ba0405255b38bdfa1d30c568961b0e1a85ff4697ac_prof);
 
     }
 

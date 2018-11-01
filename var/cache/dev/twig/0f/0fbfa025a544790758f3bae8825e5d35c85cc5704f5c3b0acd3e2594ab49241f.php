@@ -21,20 +21,20 @@ class __TwigTemplate_cf180d855bcaf843cba99d962cf44934cb07ad84427c996e55fb88c2191
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a06ae65bbc0deea1d8619849197b6191421d3bce6d7a12eeb8beea67ff0b02e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a06ae65bbc0deea1d8619849197b6191421d3bce6d7a12eeb8beea67ff0b02e4->enter($__internal_a06ae65bbc0deea1d8619849197b6191421d3bce6d7a12eeb8beea67ff0b02e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Default/login.html.twig"));
+        $__internal_81f4dec61681b51c1156d328308ddff1cf6a12be96d362a742c4612edd2d80f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_81f4dec61681b51c1156d328308ddff1cf6a12be96d362a742c4612edd2d80f0->enter($__internal_81f4dec61681b51c1156d328308ddff1cf6a12be96d362a742c4612edd2d80f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Default/login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a06ae65bbc0deea1d8619849197b6191421d3bce6d7a12eeb8beea67ff0b02e4->leave($__internal_a06ae65bbc0deea1d8619849197b6191421d3bce6d7a12eeb8beea67ff0b02e4_prof);
+        $__internal_81f4dec61681b51c1156d328308ddff1cf6a12be96d362a742c4612edd2d80f0->leave($__internal_81f4dec61681b51c1156d328308ddff1cf6a12be96d362a742c4612edd2d80f0_prof);
 
     }
 
     // line 3
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_02c4548caefddf781e80938532413518772d132cbdb8b01c37ba1350fa401f31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_02c4548caefddf781e80938532413518772d132cbdb8b01c37ba1350fa401f31->enter($__internal_02c4548caefddf781e80938532413518772d132cbdb8b01c37ba1350fa401f31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_b12897c5a4570be137e4ebfdb74dd94a5a3c10723d4773c3f59be066734583ea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b12897c5a4570be137e4ebfdb74dd94a5a3c10723d4773c3f59be066734583ea->enter($__internal_b12897c5a4570be137e4ebfdb74dd94a5a3c10723d4773c3f59be066734583ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 4
         echo "    <div class=\"login-box\">
@@ -79,7 +79,7 @@ class __TwigTemplate_cf180d855bcaf843cba99d962cf44934cb07ad84427c996e55fb88c2191
     </div>
 ";
         
-        $__internal_02c4548caefddf781e80938532413518772d132cbdb8b01c37ba1350fa401f31->leave($__internal_02c4548caefddf781e80938532413518772d132cbdb8b01c37ba1350fa401f31_prof);
+        $__internal_b12897c5a4570be137e4ebfdb74dd94a5a3c10723d4773c3f59be066734583ea->leave($__internal_b12897c5a4570be137e4ebfdb74dd94a5a3c10723d4773c3f59be066734583ea_prof);
 
     }
 

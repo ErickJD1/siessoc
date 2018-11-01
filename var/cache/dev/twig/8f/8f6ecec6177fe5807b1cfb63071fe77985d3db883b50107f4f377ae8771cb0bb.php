@@ -15,8 +15,8 @@ class __TwigTemplate_d915aacfd5c52b0bc01a4779071e16f89edb472739a3a226009deb2871d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e4b74d911f13dc4767ffa25c0c13b85e2215e33d1d566c83a3fd0d3210bb58c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e4b74d911f13dc4767ffa25c0c13b85e2215e33d1d566c83a3fd0d3210bb58c1->enter($__internal_e4b74d911f13dc4767ffa25c0c13b85e2215e33d1d566c83a3fd0d3210bb58c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Navbar:user.html.twig"));
+        $__internal_750d98ee29c87dd491d691af709af2062f2bae45d8d7f79777d30820b9e127fe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_750d98ee29c87dd491d691af709af2062f2bae45d8d7f79777d30820b9e127fe->enter($__internal_750d98ee29c87dd491d691af709af2062f2bae45d8d7f79777d30820b9e127fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Navbar:user.html.twig"));
 
         // line 1
         echo "<!-- User Account: style can be found in dropdown.less -->
@@ -90,7 +90,7 @@ class __TwigTemplate_d915aacfd5c52b0bc01a4779071e16f89edb472739a3a226009deb2871d
 </li>
 ";
         
-        $__internal_e4b74d911f13dc4767ffa25c0c13b85e2215e33d1d566c83a3fd0d3210bb58c1->leave($__internal_e4b74d911f13dc4767ffa25c0c13b85e2215e33d1d566c83a3fd0d3210bb58c1_prof);
+        $__internal_750d98ee29c87dd491d691af709af2062f2bae45d8d7f79777d30820b9e127fe->leave($__internal_750d98ee29c87dd491d691af709af2062f2bae45d8d7f79777d30820b9e127fe_prof);
 
     }
 

@@ -7,74 +7,93 @@ class __TwigTemplate_7d2669ed6228ced05a7940e880960452b2e146d2f5bb9b616cc29803ef1
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("layout/base-layout.html.twig", ":user:edit.html.twig", 1);
-        $this->blocks = array(
-            'page_content' => array($this, 'block_page_content'),
-        );
-    }
+        $this->parent = false;
 
-    protected function doGetParent(array $context)
-    {
-        return "layout/base-layout.html.twig";
+        $this->blocks = array(
+        );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f089f4a02ee7d936170517d5d7a43ccf4fd3d0907374a67db166e638eb99106e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f089f4a02ee7d936170517d5d7a43ccf4fd3d0907374a67db166e638eb99106e->enter($__internal_f089f4a02ee7d936170517d5d7a43ccf4fd3d0907374a67db166e638eb99106e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:edit.html.twig"));
+        $__internal_4f99ecb3bb116a15cac1a750dc456456819fd8036d910bac31036870532528e0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4f99ecb3bb116a15cac1a750dc456456819fd8036d910bac31036870532528e0->enter($__internal_4f99ecb3bb116a15cac1a750dc456456819fd8036d910bac31036870532528e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":user:edit.html.twig"));
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_f089f4a02ee7d936170517d5d7a43ccf4fd3d0907374a67db166e638eb99106e->leave($__internal_f089f4a02ee7d936170517d5d7a43ccf4fd3d0907374a67db166e638eb99106e_prof);
+        // line 1
+        echo "<div class=\"modal fade\" id=\"edit";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()), "html", null, true);
+        echo "\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+    <div class=\"modal-dialog\">
+        <div class=\"modal-content\">
 
-    }
+            <div class=\"modal-header\">
+                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+                <h4>Modificar de Usuario</h4>
+            </div>
+            <div class=\"modal-body\">
+                <div class=\"list-group\">
+                    <!--modal-->
 
-    // line 4
-    public function block_page_content($context, array $blocks = array())
-    {
-        $__internal_0d3eca8b2c4e550f7c07c2f09d2d650d734181ac2b5e5c9983fb890da18e1229 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0d3eca8b2c4e550f7c07c2f09d2d650d734181ac2b5e5c9983fb890da18e1229->enter($__internal_0d3eca8b2c4e550f7c07c2f09d2d650d734181ac2b5e5c9983fb890da18e1229_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
-
-        // line 5
-        echo "    <h1>User edit</h1>
-
-    ";
-        // line 7
-        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_start');
+                    <div class=\"box box-success\" style=\"width: 100%\">
+                        <div class=\"container\"  style=\"width: 75%; margin-top: 3%; margin-bottom: 3%\">
+                            ";
+        // line 15
+        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_edit", array("id" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()))), "method" => "POST"));
         echo "
-        ";
-        // line 8
+                            ";
+        // line 16
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'widget');
         echo "
-        <input type=\"submit\" value=\"Edit\" />
-    ";
-        // line 10
+                            <input type=\"submit\" class=\"btn btn-success btn-xl\" value=\"Edit\" />
+                            ";
+        // line 18
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_end');
         echo "
 
-    <ul>
-        <li>
-            <a href=\"";
-        // line 14
+                            <ul>
+                                <li>
+                                    <a href=\"";
+        // line 22
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
         echo "\">Back to the list</a>
-        </li>
-        <li>
-            ";
-        // line 17
+                                </li>
+                                <li>
+                                    ";
+        // line 25
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_start');
         echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 19
+                                    <input type=\"submit\" value=\"Delete\">
+                                    ";
+        // line 27
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_end');
         echo "
-        </li>
-    </ul>
+                                </li>
+                            </ul>
+                            </br>
+                            <ul>
+                                <li>
+                                    <a href=\"";
+        // line 33
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_index");
+        echo "\">Back to the list</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </br>    
+                    </div>
+
+                    <!--modal-->
+                </div>
+
+                <div class=\"modal-footer\">
+                    <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 ";
         
-        $__internal_0d3eca8b2c4e550f7c07c2f09d2d650d734181ac2b5e5c9983fb890da18e1229->leave($__internal_0d3eca8b2c4e550f7c07c2f09d2d650d734181ac2b5e5c9983fb890da18e1229_prof);
+        $__internal_4f99ecb3bb116a15cac1a750dc456456819fd8036d910bac31036870532528e0->leave($__internal_4f99ecb3bb116a15cac1a750dc456456819fd8036d910bac31036870532528e0_prof);
 
     }
 
@@ -90,7 +109,7 @@ class __TwigTemplate_7d2669ed6228ced05a7940e880960452b2e146d2f5bb9b616cc29803ef1
 
     public function getDebugInfo()
     {
-        return array (  71 => 19,  66 => 17,  60 => 14,  53 => 10,  48 => 8,  44 => 7,  40 => 5,  34 => 4,  11 => 1,);
+        return array (  76 => 33,  67 => 27,  62 => 25,  56 => 22,  49 => 18,  44 => 16,  40 => 15,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -103,28 +122,55 @@ class __TwigTemplate_7d2669ed6228ced05a7940e880960452b2e146d2f5bb9b616cc29803ef1
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends \"layout/base-layout.html.twig\" %}
+        return new Twig_Source("<div class=\"modal fade\" id=\"edit{{user.id}}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+    <div class=\"modal-dialog\">
+        <div class=\"modal-content\">
 
+            <div class=\"modal-header\">
+                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+                <h4>Modificar de Usuario</h4>
+            </div>
+            <div class=\"modal-body\">
+                <div class=\"list-group\">
+                    <!--modal-->
 
-{% block page_content %}
-    <h1>User edit</h1>
+                    <div class=\"box box-success\" style=\"width: 100%\">
+                        <div class=\"container\"  style=\"width: 75%; margin-top: 3%; margin-bottom: 3%\">
+                            {{ form_start(edit_form,{'action': path('user_edit',{'id':user.id}), 'method': 'POST'}) }}
+                            {{ form_widget(edit_form) }}
+                            <input type=\"submit\" class=\"btn btn-success btn-xl\" value=\"Edit\" />
+                            {{ form_end(edit_form) }}
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type=\"submit\" value=\"Edit\" />
-    {{ form_end(edit_form) }}
+                            <ul>
+                                <li>
+                                    <a href=\"{{ path('user_index') }}\">Back to the list</a>
+                                </li>
+                                <li>
+                                    {{ form_start(delete_form) }}
+                                    <input type=\"submit\" value=\"Delete\">
+                                    {{ form_end(delete_form) }}
+                                </li>
+                            </ul>
+                            </br>
+                            <ul>
+                                <li>
+                                    <a href=\"{{ path('user_index') }}\">Back to the list</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </br>    
+                    </div>
 
-    <ul>
-        <li>
-            <a href=\"{{ path('user_index') }}\">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
-{% endblock %}
+                    <!--modal-->
+                </div>
+
+                <div class=\"modal-footer\">
+                    <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 ", ":user:edit.html.twig", "C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/user/edit.html.twig");
     }
 }

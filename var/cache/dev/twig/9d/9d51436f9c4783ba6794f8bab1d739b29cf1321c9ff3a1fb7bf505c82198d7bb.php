@@ -15,8 +15,8 @@ class __TwigTemplate_d298582584ba360d1f8da39b5c2eb8f74d8fa57e99d072bf563e336e6cb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dbfdd3492b6989ad7a32c4cda05ad35c8e3541a117bc5ec0e5cc03d940a3de38 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dbfdd3492b6989ad7a32c4cda05ad35c8e3541a117bc5ec0e5cc03d940a3de38->enter($__internal_dbfdd3492b6989ad7a32c4cda05ad35c8e3541a117bc5ec0e5cc03d940a3de38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Navbar:notifications.html.twig"));
+        $__internal_c35793e31c5429e868a2c380b9dabc019f30386b96b5c47faee06671d694df65 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c35793e31c5429e868a2c380b9dabc019f30386b96b5c47faee06671d694df65->enter($__internal_c35793e31c5429e868a2c380b9dabc019f30386b96b5c47faee06671d694df65_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Navbar:notifications.html.twig"));
 
         // line 1
         echo "<!-- Notifications: style can be found in dropdown.less -->
@@ -74,7 +74,7 @@ class __TwigTemplate_d298582584ba360d1f8da39b5c2eb8f74d8fa57e99d072bf563e336e6cb
     </ul>
 </li>";
         
-        $__internal_dbfdd3492b6989ad7a32c4cda05ad35c8e3541a117bc5ec0e5cc03d940a3de38->leave($__internal_dbfdd3492b6989ad7a32c4cda05ad35c8e3541a117bc5ec0e5cc03d940a3de38_prof);
+        $__internal_c35793e31c5429e868a2c380b9dabc019f30386b96b5c47faee06671d694df65->leave($__internal_c35793e31c5429e868a2c380b9dabc019f30386b96b5c47faee06671d694df65_prof);
 
     }
 

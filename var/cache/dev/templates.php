@@ -189,6 +189,7 @@
   'WebProfilerBundle:Profiler:toolbar_js.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Profiler/toolbar_js.html.twig',
   'WebProfilerBundle:Profiler:toolbar_redirect.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Profiler/toolbar_redirect.html.twig',
   'WebProfilerBundle:Router:panel.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Router/panel.html.twig',
+  '::base.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/base.html.twig',
   ':default:dashboard.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/default/dashboard.html.twig',
   ':default/inc:footer.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/default/inc/footer.html.twig',
   ':default/inc:header.html.twig' => 'C:\\xampp\\htdocs\\siessoc\\app/Resources\\views/default/inc/header.html.twig',

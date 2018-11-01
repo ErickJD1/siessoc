@@ -15,8 +15,8 @@ class __TwigTemplate_bc4d7aec5ef13cf14f2e4c529fabce8373f29ac38b8179a3dbbbd5a70ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e4ff8e5557cd9e98d2609511a7d4204afaba2141759ec2db59bb71b47d2a4040 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e4ff8e5557cd9e98d2609511a7d4204afaba2141759ec2db59bb71b47d2a4040->enter($__internal_e4ff8e5557cd9e98d2609511a7d4204afaba2141759ec2db59bb71b47d2a4040_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/sortable_link.html.twig"));
+        $__internal_52e5ff6c5bdd17008dc8cebeccb7e0f2c726fe35094a7f4bbde68afd14528412 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_52e5ff6c5bdd17008dc8cebeccb7e0f2c726fe35094a7f4bbde68afd14528412->enter($__internal_52e5ff6c5bdd17008dc8cebeccb7e0f2c726fe35094a7f4bbde68afd14528412_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/sortable_link.html.twig"));
 
         // line 1
         echo "<a";
@@ -37,7 +37,7 @@ class __TwigTemplate_bc4d7aec5ef13cf14f2e4c529fabce8373f29ac38b8179a3dbbbd5a70ca
         echo "</a>
 ";
         
-        $__internal_e4ff8e5557cd9e98d2609511a7d4204afaba2141759ec2db59bb71b47d2a4040->leave($__internal_e4ff8e5557cd9e98d2609511a7d4204afaba2141759ec2db59bb71b47d2a4040_prof);
+        $__internal_52e5ff6c5bdd17008dc8cebeccb7e0f2c726fe35094a7f4bbde68afd14528412->leave($__internal_52e5ff6c5bdd17008dc8cebeccb7e0f2c726fe35094a7f4bbde68afd14528412_prof);
 
     }
 

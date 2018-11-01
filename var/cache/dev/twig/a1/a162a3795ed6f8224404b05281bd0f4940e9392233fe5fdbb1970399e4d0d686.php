@@ -24,23 +24,23 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_02ba3e30d659b2e459f83c4394835846cdc4d110b76786b6cfe34211ae76a18a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_02ba3e30d659b2e459f83c4394835846cdc4d110b76786b6cfe34211ae76a18a->enter($__internal_02ba3e30d659b2e459f83c4394835846cdc4d110b76786b6cfe34211ae76a18a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/index.html.twig"));
+        $__internal_23a3efb8158175b6c155f13665520f7ac46bca0212922ddc4cfe84e49687dbff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_23a3efb8158175b6c155f13665520f7ac46bca0212922ddc4cfe84e49687dbff->enter($__internal_23a3efb8158175b6c155f13665520f7ac46bca0212922ddc4cfe84e49687dbff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/index.html.twig"));
 
         // line 3
         $context["macro"] = $this->loadTemplate("AvanzuAdminThemeBundle:layout:macros.html.twig", "user/index.html.twig", 3);
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_02ba3e30d659b2e459f83c4394835846cdc4d110b76786b6cfe34211ae76a18a->leave($__internal_02ba3e30d659b2e459f83c4394835846cdc4d110b76786b6cfe34211ae76a18a_prof);
+        $__internal_23a3efb8158175b6c155f13665520f7ac46bca0212922ddc4cfe84e49687dbff->leave($__internal_23a3efb8158175b6c155f13665520f7ac46bca0212922ddc4cfe84e49687dbff_prof);
 
     }
 
     // line 4
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_89bef6c8052c01f04f4dc81de0e0e7b1afdcf37f9dde2f9c57da25c770d1197e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_89bef6c8052c01f04f4dc81de0e0e7b1afdcf37f9dde2f9c57da25c770d1197e->enter($__internal_89bef6c8052c01f04f4dc81de0e0e7b1afdcf37f9dde2f9c57da25c770d1197e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_cc76babf6fd0a638b0d7898aa14c6f26d11e4389331e2081404c74767942aeaf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cc76babf6fd0a638b0d7898aa14c6f26d11e4389331e2081404c74767942aeaf->enter($__internal_cc76babf6fd0a638b0d7898aa14c6f26d11e4389331e2081404c74767942aeaf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 5
         echo "    ";
@@ -48,39 +48,39 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
         echo "
  ";
         
-        $__internal_89bef6c8052c01f04f4dc81de0e0e7b1afdcf37f9dde2f9c57da25c770d1197e->leave($__internal_89bef6c8052c01f04f4dc81de0e0e7b1afdcf37f9dde2f9c57da25c770d1197e_prof);
+        $__internal_cc76babf6fd0a638b0d7898aa14c6f26d11e4389331e2081404c74767942aeaf->leave($__internal_cc76babf6fd0a638b0d7898aa14c6f26d11e4389331e2081404c74767942aeaf_prof);
 
     }
 
     // line 7
     public function block_page_title($context, array $blocks = array())
     {
-        $__internal_c873f11690ec524d840ddca7a88304ee209e44a780338e795412faa3d0634225 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c873f11690ec524d840ddca7a88304ee209e44a780338e795412faa3d0634225->enter($__internal_c873f11690ec524d840ddca7a88304ee209e44a780338e795412faa3d0634225_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_title"));
+        $__internal_c5d43a0758ce11e0f4e5ab7f3d1c2d3e45fcc561a66ee3f4e82f3091e2821014 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c5d43a0758ce11e0f4e5ab7f3d1c2d3e45fcc561a66ee3f4e82f3091e2821014->enter($__internal_c5d43a0758ce11e0f4e5ab7f3d1c2d3e45fcc561a66ee3f4e82f3091e2821014_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_title"));
 
         echo " Usuarios | ";
         
-        $__internal_c873f11690ec524d840ddca7a88304ee209e44a780338e795412faa3d0634225->leave($__internal_c873f11690ec524d840ddca7a88304ee209e44a780338e795412faa3d0634225_prof);
+        $__internal_c5d43a0758ce11e0f4e5ab7f3d1c2d3e45fcc561a66ee3f4e82f3091e2821014->leave($__internal_c5d43a0758ce11e0f4e5ab7f3d1c2d3e45fcc561a66ee3f4e82f3091e2821014_prof);
 
     }
 
     // line 8
     public function block_page_subtitle($context, array $blocks = array())
     {
-        $__internal_fcd2bcb7eca5002f4404420c06fb3cdad130e538957080f347527d6c2da1acf9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fcd2bcb7eca5002f4404420c06fb3cdad130e538957080f347527d6c2da1acf9->enter($__internal_fcd2bcb7eca5002f4404420c06fb3cdad130e538957080f347527d6c2da1acf9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_subtitle"));
+        $__internal_b8a9fdefa6b078476aede84f328ecb30a8d50a85ada83ec1c93436e5d983723a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b8a9fdefa6b078476aede84f328ecb30a8d50a85ada83ec1c93436e5d983723a->enter($__internal_b8a9fdefa6b078476aede84f328ecb30a8d50a85ada83ec1c93436e5d983723a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_subtitle"));
 
         echo "Gestion de Usuarios ";
         
-        $__internal_fcd2bcb7eca5002f4404420c06fb3cdad130e538957080f347527d6c2da1acf9->leave($__internal_fcd2bcb7eca5002f4404420c06fb3cdad130e538957080f347527d6c2da1acf9_prof);
+        $__internal_b8a9fdefa6b078476aede84f328ecb30a8d50a85ada83ec1c93436e5d983723a->leave($__internal_b8a9fdefa6b078476aede84f328ecb30a8d50a85ada83ec1c93436e5d983723a_prof);
 
     }
 
     // line 10
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_f73494b24edc8f99291efb00f09c71a4af4b86ffea098936829f2fb81c2f0b4a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f73494b24edc8f99291efb00f09c71a4af4b86ffea098936829f2fb81c2f0b4a->enter($__internal_f73494b24edc8f99291efb00f09c71a4af4b86ffea098936829f2fb81c2f0b4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_35dda224b48cd2330e170313643dc2a0b5d82c84f507e5995ddf6c488151bb02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_35dda224b48cd2330e170313643dc2a0b5d82c84f507e5995ddf6c488151bb02->enter($__internal_35dda224b48cd2330e170313643dc2a0b5d82c84f507e5995ddf6c488151bb02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 11
         echo "
@@ -95,72 +95,68 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
         echo "
         </div>
         <br> </br>
-        <table id=\"tabelMahasiswa\" class=\"table table-bordered table-hover table-striped\" id=\"tabelMahasiswa\">
+        <table id=\"tabelMahasiswa\" style=\"width:90%;\"  class=\"table table-bordered table-hover table-striped table-responsive\" id=\"tabelMahasiswa\">
             <thead>
                 <tr role=\"row\">
                     
                     <th>Id</th>
                     <th>Firstname</th>
                     <th>Lastname</th>
-                    <th>Profilepicture</th>
-                    <th>Createdat</th>
-                    <th>Updateat</th>
+                    <th>Username</th>
+                    <th>email</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 ";
-        // line 34
+        // line 33
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["pagination"]) ? $context["pagination"] : $this->getContext($context, "pagination")));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 35
+            // line 34
             echo "                    <tr>
                         <td><a href=\"";
-            // line 36
+            // line 35
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_show", array("id" => $this->getAttribute($context["user"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "id", array()), "html", null, true);
             echo "</a></td>
                         <td>";
-            // line 37
+            // line 36
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "firstName", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 38
+            // line 37
             echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "lastName", array()), "html", null, true);
             echo "</td>
                         <td>";
+            // line 38
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "username", array()), "html", null, true);
+            echo "</td>
+                        <td>";
             // line 39
-            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "profilePicture", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "email", array()), "html", null, true);
             echo "</td>
-                        <td>";
-            // line 40
-            if ($this->getAttribute($context["user"], "createdAt", array())) {
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["user"], "createdAt", array()), "Y-m-d H:i:s"), "html", null, true);
-            }
-            echo "</td>
-                        <td>";
-            // line 41
-            if ($this->getAttribute($context["user"], "updateAt", array())) {
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["user"], "updateAt", array()), "Y-m-d H:i:s"), "html", null, true);
-            }
-            echo "</td>
-                        <td>
-                            <ul>
-                                <li>
-                                    <a href=\"";
+                       ";
+            // line 42
+            echo "                        <td align=\"center\">
+                            <div style=\"float:left;\"><button class=\"\" style=\"background-color: transparent; border: none;\" data-toggle=\"modal\" data-target=\"#show";
+            // line 43
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "id", array()), "html", null, true);
+            echo "\"><i class=\"fa fa-eye\" style=\"font-size: 20px\"></i></button>
+                            ";
+            // line 44
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SalexUserBundle:User:show", array("id" => $this->getAttribute($context["user"], "id", array()))));
+            echo "</div>
+                            <div style=\"float:left;\"><button class=\"\" style=\"background-color: transparent;  border: none;\" data-toggle=\"modal\" data-target=\"#edit";
             // line 45
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_show", array("id" => $this->getAttribute($context["user"], "id", array()))), "html", null, true);
-            echo "\">show</a>
-                                </li>
-                                <li>
-                                    <a href=\"";
-            // line 48
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_edit", array("id" => $this->getAttribute($context["user"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
-                                </li>
-                            </ul>
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "id", array()), "html", null, true);
+            echo "\"><i class=\"fa fa-edit\" style=\"font-size: 20px\"></i></button>
+                            ";
+            // line 46
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->renderFragment($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("SalexUserBundle:User:edit", array("id" => $this->getAttribute($context["user"], "id", array()))));
+            echo "</div> 
+                            
                         </td>
                     </tr>
                 ";
@@ -168,7 +164,7 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
+        // line 51
         echo "            </tbody>
 
         </table>
@@ -181,7 +177,7 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
 
 ";
         
-        $__internal_f73494b24edc8f99291efb00f09c71a4af4b86ffea098936829f2fb81c2f0b4a->leave($__internal_f73494b24edc8f99291efb00f09c71a4af4b86ffea098936829f2fb81c2f0b4a_prof);
+        $__internal_35dda224b48cd2330e170313643dc2a0b5d82c84f507e5995ddf6c488151bb02->leave($__internal_35dda224b48cd2330e170313643dc2a0b5d82c84f507e5995ddf6c488151bb02_prof);
 
     }
 
@@ -197,7 +193,7 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
 
     public function getDebugInfo()
     {
-        return array (  172 => 54,  160 => 48,  154 => 45,  145 => 41,  139 => 40,  135 => 39,  131 => 38,  127 => 37,  121 => 36,  118 => 35,  114 => 34,  94 => 17,  86 => 11,  80 => 10,  68 => 8,  56 => 7,  46 => 5,  40 => 4,  33 => 1,  31 => 3,  11 => 1,);
+        return array (  168 => 51,  157 => 46,  153 => 45,  149 => 44,  145 => 43,  142 => 42,  138 => 39,  134 => 38,  130 => 37,  126 => 36,  120 => 35,  117 => 34,  113 => 33,  94 => 17,  86 => 11,  80 => 10,  68 => 8,  56 => 7,  46 => 5,  40 => 4,  33 => 1,  31 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -229,16 +225,15 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
          {{ render(controller('SalexUserBundle:User:new' )) }}
         </div>
         <br> </br>
-        <table id=\"tabelMahasiswa\" class=\"table table-bordered table-hover table-striped\" id=\"tabelMahasiswa\">
+        <table id=\"tabelMahasiswa\" style=\"width:90%;\"  class=\"table table-bordered table-hover table-striped table-responsive\" id=\"tabelMahasiswa\">
             <thead>
                 <tr role=\"row\">
                     
                     <th>Id</th>
                     <th>Firstname</th>
                     <th>Lastname</th>
-                    <th>Profilepicture</th>
-                    <th>Createdat</th>
-                    <th>Updateat</th>
+                    <th>Username</th>
+                    <th>email</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -248,18 +243,16 @@ class __TwigTemplate_4fce09e2fd03dc61732d8ae8fb20412c1e3a395e3ffd98a1f1f0f8aac7b
                         <td><a href=\"{{ path('user_show', { 'id': user.id }) }}\">{{ user.id }}</a></td>
                         <td>{{ user.firstName }}</td>
                         <td>{{ user.lastName }}</td>
-                        <td>{{ user.profilePicture }}</td>
-                        <td>{% if user.createdAt %}{{ user.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                        <td>{% if user.updateAt %}{{ user.updateAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                        <td>
-                            <ul>
-                                <li>
-                                    <a href=\"{{ path('user_show', { 'id': user.id }) }}\">show</a>
-                                </li>
-                                <li>
-                                    <a href=\"{{ path('user_edit', { 'id': user.id }) }}\">edit</a>
-                                </li>
-                            </ul>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                       {# <td>{% if user.createdAt %}{{ user.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                        <td>{% if user.updateAt %}{{ user.updateAt|date('Y-m-d H:i:s') }}{% endif %}</td>#}
+                        <td align=\"center\">
+                            <div style=\"float:left;\"><button class=\"\" style=\"background-color: transparent; border: none;\" data-toggle=\"modal\" data-target=\"#show{{ user.id }}\"><i class=\"fa fa-eye\" style=\"font-size: 20px\"></i></button>
+                            {{ render(controller('SalexUserBundle:User:show',{ 'id':user.id })) }}</div>
+                            <div style=\"float:left;\"><button class=\"\" style=\"background-color: transparent;  border: none;\" data-toggle=\"modal\" data-target=\"#edit{{ user.id }}\"><i class=\"fa fa-edit\" style=\"font-size: 20px\"></i></button>
+                            {{ render(controller('SalexUserBundle:User:edit',{ 'id':user.id })) }}</div> 
+                            
                         </td>
                     </tr>
                 {% endfor %}
