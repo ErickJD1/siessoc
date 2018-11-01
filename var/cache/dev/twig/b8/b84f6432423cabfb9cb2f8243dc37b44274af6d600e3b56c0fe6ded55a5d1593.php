@@ -15,8 +15,8 @@ class __TwigTemplate_b165979d216a4eceff38977754dea947879c7ae3583ee157b4ef7929b25
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dff31da0cc5d2646d0fcbadf8f7ff09d60800770e4b4c9b13607647c9c7b6c24 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dff31da0cc5d2646d0fcbadf8f7ff09d60800770e4b4c9b13607647c9c7b6c24->enter($__internal_dff31da0cc5d2646d0fcbadf8f7ff09d60800770e4b4c9b13607647c9c7b6c24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "KnpPaginatorBundle:Pagination:bulma_pagination.html.twig"));
+        $__internal_e79296a6a0891b56b74ee4a57eb4e9ce9083a7db90fd1d4478eb937bd6c877c4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e79296a6a0891b56b74ee4a57eb4e9ce9083a7db90fd1d4478eb937bd6c877c4->enter($__internal_e79296a6a0891b56b74ee4a57eb4e9ce9083a7db90fd1d4478eb937bd6c877c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "KnpPaginatorBundle:Pagination:bulma_pagination.html.twig"));
 
         // line 2
         echo "
@@ -212,7 +212,7 @@ class __TwigTemplate_b165979d216a4eceff38977754dea947879c7ae3583ee157b4ef7929b25
 ";
         }
         
-        $__internal_dff31da0cc5d2646d0fcbadf8f7ff09d60800770e4b4c9b13607647c9c7b6c24->leave($__internal_dff31da0cc5d2646d0fcbadf8f7ff09d60800770e4b4c9b13607647c9c7b6c24_prof);
+        $__internal_e79296a6a0891b56b74ee4a57eb4e9ce9083a7db90fd1d4478eb937bd6c877c4->leave($__internal_e79296a6a0891b56b74ee4a57eb4e9ce9083a7db90fd1d4478eb937bd6c877c4_prof);
 
     }
 

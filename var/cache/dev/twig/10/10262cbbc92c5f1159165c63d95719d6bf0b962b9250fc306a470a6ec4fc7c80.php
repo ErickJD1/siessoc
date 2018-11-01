@@ -15,8 +15,8 @@ class __TwigTemplate_ad6ed9c717858250e5e420fe04da818d5cb79f4e619c3f1c33b379bd23e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fced421428c29aaa932445d0139125f294c16ce00b25c054284c07fab02de376 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fced421428c29aaa932445d0139125f294c16ce00b25c054284c07fab02de376->enter($__internal_fced421428c29aaa932445d0139125f294c16ce00b25c054284c07fab02de376_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Navbar/messages.html.twig"));
+        $__internal_b24bc40cb56043108e8100a8671c639125895acdd22fd31d7dd4a9d8c5094af5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b24bc40cb56043108e8100a8671c639125895acdd22fd31d7dd4a9d8c5094af5->enter($__internal_b24bc40cb56043108e8100a8671c639125895acdd22fd31d7dd4a9d8c5094af5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@AvanzuAdminTheme/Navbar/messages.html.twig"));
 
         // line 1
         echo "<!-- Messages: style can be found in dropdown.less-->
@@ -90,7 +90,7 @@ class __TwigTemplate_ad6ed9c717858250e5e420fe04da818d5cb79f4e619c3f1c33b379bd23e
     </ul>
 </li>";
         
-        $__internal_fced421428c29aaa932445d0139125f294c16ce00b25c054284c07fab02de376->leave($__internal_fced421428c29aaa932445d0139125f294c16ce00b25c054284c07fab02de376_prof);
+        $__internal_b24bc40cb56043108e8100a8671c639125895acdd22fd31d7dd4a9d8c5094af5->leave($__internal_b24bc40cb56043108e8100a8671c639125895acdd22fd31d7dd4a9d8c5094af5_prof);
 
     }
 

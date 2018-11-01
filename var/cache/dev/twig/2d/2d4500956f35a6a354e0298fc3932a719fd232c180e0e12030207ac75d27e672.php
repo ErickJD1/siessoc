@@ -21,20 +21,20 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b3aa71ecb0793cb913e9d6e04dc92a6e2b3676d1f6af64e1c436dd2af1eca40c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b3aa71ecb0793cb913e9d6e04dc92a6e2b3676d1f6af64e1c436dd2af1eca40c->enter($__internal_b3aa71ecb0793cb913e9d6e04dc92a6e2b3676d1f6af64e1c436dd2af1eca40c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":webSite:index.html.twig"));
+        $__internal_de0d9bfdee93284de9cda42077e268292e1d44e37905ac62d532a99c1620f3e2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_de0d9bfdee93284de9cda42077e268292e1d44e37905ac62d532a99c1620f3e2->enter($__internal_de0d9bfdee93284de9cda42077e268292e1d44e37905ac62d532a99c1620f3e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":webSite:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b3aa71ecb0793cb913e9d6e04dc92a6e2b3676d1f6af64e1c436dd2af1eca40c->leave($__internal_b3aa71ecb0793cb913e9d6e04dc92a6e2b3676d1f6af64e1c436dd2af1eca40c_prof);
+        $__internal_de0d9bfdee93284de9cda42077e268292e1d44e37905ac62d532a99c1620f3e2->leave($__internal_de0d9bfdee93284de9cda42077e268292e1d44e37905ac62d532a99c1620f3e2_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_9b39f804059302652bb9b947afae5232dfb6d654e14e29b663d37630e4041a3b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9b39f804059302652bb9b947afae5232dfb6d654e14e29b663d37630e4041a3b->enter($__internal_9b39f804059302652bb9b947afae5232dfb6d654e14e29b663d37630e4041a3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4498ea8414e3d24a45b5d987f22636eaf4563a782b3d27f855922c497195c4a6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4498ea8414e3d24a45b5d987f22636eaf4563a782b3d27f855922c497195c4a6->enter($__internal_4498ea8414e3d24a45b5d987f22636eaf4563a782b3d27f855922c497195c4a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<header>
@@ -48,31 +48,31 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class=\"carousel-item active\" style=\"background-image: url(";
         // line 13
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide01.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide01.jpg"), "html", null, true);
         echo ")\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Un lugar donde tomar buenas tapas</p>
+          <h2>SIESSOC</h2>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class=\"carousel-item\" style=\"background-image: url(";
         // line 20
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide02.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide02.jpg"), "html", null, true);
         echo ")\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Con comida tradicional y de autor</p>
+          <h3>SIESSOC</h3>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class=\"carousel-item\" style=\"background-image: url(";
         // line 27
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide03.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/slide03.jpg"), "html", null, true);
         echo ")\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Carta renovada todas los meses</p>
+          <h3>SIESSOC</h3>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
 </header>
 <!-- Page Content -->
 <div class=\"container\">
-  <h1 class=\"my-4\">Nuestras mejores tapas</h1>
+  <h1 class=\"my-4\">Nuestras Ultimas Actividades</h1>
 
   <div class=\"row\">
   
@@ -96,7 +96,7 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
 </div>
 ";
         
-        $__internal_9b39f804059302652bb9b947afae5232dfb6d654e14e29b663d37630e4041a3b->leave($__internal_9b39f804059302652bb9b947afae5232dfb6d654e14e29b663d37630e4041a3b_prof);
+        $__internal_4498ea8414e3d24a45b5d987f22636eaf4563a782b3d27f855922c497195c4a6->leave($__internal_4498ea8414e3d24a45b5d987f22636eaf4563a782b3d27f855922c497195c4a6_prof);
 
     }
 
@@ -137,24 +137,24 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
     </ol>
     <div class=\"carousel-inner\" role=\"listbox\">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class=\"carousel-item active\" style=\"background-image: url({{ asset('img/slide01.png') }})\">
+      <div class=\"carousel-item active\" style=\"background-image: url({{ asset('img/slide01.jpg') }})\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Un lugar donde tomar buenas tapas</p>
+          <h2>SIESSOC</h2>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class=\"carousel-item\" style=\"background-image: url({{ asset('img/slide02.png') }})\">
+      <div class=\"carousel-item\" style=\"background-image: url({{ asset('img/slide02.jpg') }})\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Con comida tradicional y de autor</p>
+          <h3>SIESSOC</h3>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class=\"carousel-item\" style=\"background-image: url({{ asset('img/slide03.png') }})\">
+      <div class=\"carousel-item\" style=\"background-image: url({{ asset('img/slide03.jpg') }})\">
         <div class=\"carousel-caption d-none d-md-block\">
-          <h3>El Bar de Paco</h3>
-          <p>Carta renovada todas los meses</p>
+          <h3>SIESSOC</h3>
+          <p>Educational Scholarships For Students Of Chiltiupan</p>
         </div>
       </div>
     </div>
@@ -170,7 +170,7 @@ class __TwigTemplate_8f82821613faacd426fa961965da93dfa3851d6871cf215d8269b356609
 </header>
 <!-- Page Content -->
 <div class=\"container\">
-  <h1 class=\"my-4\">Nuestras mejores tapas</h1>
+  <h1 class=\"my-4\">Nuestras Ultimas Actividades</h1>
 
   <div class=\"row\">
   

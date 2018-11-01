@@ -15,8 +15,8 @@ class __TwigTemplate_f454ce6a3fd4acf8d71def3f31736fc9e0113ab89b4f5f5fdf22cf5c964
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b90fc3964254a950adf3245754ac4710bfb6f0ab9b49fe63f9ebddec2e51d922 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b90fc3964254a950adf3245754ac4710bfb6f0ab9b49fe63f9ebddec2e51d922->enter($__internal_b90fc3964254a950adf3245754ac4710bfb6f0ab9b49fe63f9ebddec2e51d922_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":layout:user-panel.html.twig"));
+        $__internal_3f13dc5643e3c311de3ab653aa07eb13d5c0e142ba77e825d9b1b0b606b2d9c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3f13dc5643e3c311de3ab653aa07eb13d5c0e142ba77e825d9b1b0b606b2d9c0->enter($__internal_3f13dc5643e3c311de3ab653aa07eb13d5c0e142ba77e825d9b1b0b606b2d9c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":layout:user-panel.html.twig"));
 
         // line 1
         $context["macro"] = $this->loadTemplate("AvanzuAdminThemeBundle:layout:macros.html.twig", ":layout:user-panel.html.twig", 1);
@@ -52,7 +52,7 @@ class __TwigTemplate_f454ce6a3fd4acf8d71def3f31736fc9e0113ab89b4f5f5fdf22cf5c964
 </div>
 ";
         
-        $__internal_b90fc3964254a950adf3245754ac4710bfb6f0ab9b49fe63f9ebddec2e51d922->leave($__internal_b90fc3964254a950adf3245754ac4710bfb6f0ab9b49fe63f9ebddec2e51d922_prof);
+        $__internal_3f13dc5643e3c311de3ab653aa07eb13d5c0e142ba77e825d9b1b0b606b2d9c0->leave($__internal_3f13dc5643e3c311de3ab653aa07eb13d5c0e142ba77e825d9b1b0b606b2d9c0_prof);
 
     }
 

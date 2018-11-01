@@ -15,8 +15,8 @@ class __TwigTemplate_deb27d722c519731837ef49023644df6d95e179aac11d501012279ebd19
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0137b5b291b39f401ebfb570a7cacc9ad253f88667ea44d52261682ad99d2757 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0137b5b291b39f401ebfb570a7cacc9ad253f88667ea44d52261682ad99d2757->enter($__internal_0137b5b291b39f401ebfb570a7cacc9ad253f88667ea44d52261682ad99d2757_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/breadcrumb.html.twig"));
+        $__internal_d5c676948c3dc263d49feb16d3f50946f81bbe4ea20eaef4b87ba3e98ae2b198 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d5c676948c3dc263d49feb16d3f50946f81bbe4ea20eaef4b87ba3e98ae2b198->enter($__internal_d5c676948c3dc263d49feb16d3f50946f81bbe4ea20eaef4b87ba3e98ae2b198_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout/breadcrumb.html.twig"));
 
         // line 1
         if ( !twig_test_empty($this->env->getExtension('WhiteOctober\BreadcrumbsBundle\Twig\Extension\BreadcrumbsExtension')->renderBreadcrumbs())) {
@@ -70,7 +70,7 @@ class __TwigTemplate_deb27d722c519731837ef49023644df6d95e179aac11d501012279ebd19
             }
         }
         
-        $__internal_0137b5b291b39f401ebfb570a7cacc9ad253f88667ea44d52261682ad99d2757->leave($__internal_0137b5b291b39f401ebfb570a7cacc9ad253f88667ea44d52261682ad99d2757_prof);
+        $__internal_d5c676948c3dc263d49feb16d3f50946f81bbe4ea20eaef4b87ba3e98ae2b198->leave($__internal_d5c676948c3dc263d49feb16d3f50946f81bbe4ea20eaef4b87ba3e98ae2b198_prof);
 
     }
 

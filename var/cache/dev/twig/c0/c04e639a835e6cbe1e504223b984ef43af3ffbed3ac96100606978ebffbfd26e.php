@@ -15,8 +15,8 @@ class __TwigTemplate_84677a58edc281d0ee7893355c1d32b734604a0cf7b0ae7c10e6a656582
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1204341c929301cbf1fcbd4d042f944823c8309dd2570cab6dab6057dc3326e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1204341c929301cbf1fcbd4d042f944823c8309dd2570cab6dab6057dc3326e4->enter($__internal_1204341c929301cbf1fcbd4d042f944823c8309dd2570cab6dab6057dc3326e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Sidebar:search-form.html.twig"));
+        $__internal_fd0e192139147a42415bfaf7338ee0b087821766de4d89d832fa5f02f9f07c2c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fd0e192139147a42415bfaf7338ee0b087821766de4d89d832fa5f02f9f07c2c->enter($__internal_fd0e192139147a42415bfaf7338ee0b087821766de4d89d832fa5f02f9f07c2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AvanzuAdminThemeBundle:Sidebar:search-form.html.twig"));
 
         // line 1
         echo "<!-- search form -->
@@ -30,7 +30,7 @@ class __TwigTemplate_84677a58edc281d0ee7893355c1d32b734604a0cf7b0ae7c10e6a656582
 </form>
 <!-- /.search form -->";
         
-        $__internal_1204341c929301cbf1fcbd4d042f944823c8309dd2570cab6dab6057dc3326e4->leave($__internal_1204341c929301cbf1fcbd4d042f944823c8309dd2570cab6dab6057dc3326e4_prof);
+        $__internal_fd0e192139147a42415bfaf7338ee0b087821766de4d89d832fa5f02f9f07c2c->leave($__internal_fd0e192139147a42415bfaf7338ee0b087821766de4d89d832fa5f02f9f07c2c_prof);
 
     }
 

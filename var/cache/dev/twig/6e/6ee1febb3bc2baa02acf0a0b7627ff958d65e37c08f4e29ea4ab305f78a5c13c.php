@@ -15,8 +15,8 @@ class __TwigTemplate_030666d335b7d37d0745fc3af887505e221fc52dc5f4eb791681d41ecf7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a8a7a84a36008192142f7c90b6eb9f9c67a748eb4b027b10f65814f92f26610b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a8a7a84a36008192142f7c90b6eb9f9c67a748eb4b027b10f65814f92f26610b->enter($__internal_a8a7a84a36008192142f7c90b6eb9f9c67a748eb4b027b10f65814f92f26610b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SalexUser/includes/loginWrapper.html.twig"));
+        $__internal_b4a89e1cb10b7fc1e80a27b511b625c8152d49e3567579b405b01e8148cf6ee5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b4a89e1cb10b7fc1e80a27b511b625c8152d49e3567579b405b01e8148cf6ee5->enter($__internal_b4a89e1cb10b7fc1e80a27b511b625c8152d49e3567579b405b01e8148cf6ee5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SalexUser/includes/loginWrapper.html.twig"));
 
         // line 1
         echo "<div class=\"login-box\">
@@ -33,7 +33,7 @@ class __TwigTemplate_030666d335b7d37d0745fc3af887505e221fc52dc5f4eb791681d41ecf7
 
 \t\t<div class=\"login-box-body\">";
         
-        $__internal_a8a7a84a36008192142f7c90b6eb9f9c67a748eb4b027b10f65814f92f26610b->leave($__internal_a8a7a84a36008192142f7c90b6eb9f9c67a748eb4b027b10f65814f92f26610b_prof);
+        $__internal_b4a89e1cb10b7fc1e80a27b511b625c8152d49e3567579b405b01e8148cf6ee5->leave($__internal_b4a89e1cb10b7fc1e80a27b511b625c8152d49e3567579b405b01e8148cf6ee5_prof);
 
     }
 
