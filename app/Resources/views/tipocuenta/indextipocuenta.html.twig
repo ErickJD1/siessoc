@@ -4,7 +4,6 @@
 {% block page_subtitle %}Listado de cuentas {% endblock %}
 
 {% block page_content %}
-{{ include ('layout/mensajes.html.twig')}}
 
 <div class="box box-primary">
 <div style="width:90%; margin-left:5%; margin-top: 2% ">
@@ -49,4 +48,9 @@
     </table>
     </div>
     </div>
+    
+    {% for success_message in app.session.flashbag.get('message') %}
+    <div class="alert alert-success">{{ success_message }}</div>
+    {% endfor %}
+
 {% endblock %}
