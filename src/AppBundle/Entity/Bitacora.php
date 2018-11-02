@@ -21,19 +21,6 @@ class Bitacora
      */
     private $idbitacora;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="DETALLESSS", type="string", length=250, nullable=true)
-     */
-    private $detallesss;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="FECHAINICIO", type="datetime", nullable=false)
-     */
-    private $fechainicio = 'CURRENT_TIMESTAMP';
 
     /**
      * @var \DateTime
@@ -52,9 +39,9 @@ class Bitacora
     /**
      * @var string
      *
-     * @ORM\Column(name="DESCRIPCIONACTIVIDAD", type="string", length=250, nullable=true)
+     * @ORM\Column(name="OBSERVACION", type="string", length=250, nullable=true)
      */
-    private $descripcionactividad;
+    private $observacion;
 
     /**
      * @var integer
@@ -73,55 +60,6 @@ class Bitacora
      */
     private $idsss;
 
-
-
-    /**
-     * Set detallesss
-     *
-     * @param string $detallesss
-     *
-     * @return Bitacora
-     */
-    public function setDetallesss($detallesss)
-    {
-        $this->detallesss = $detallesss;
-
-        return $this;
-    }
-
-    /**
-     * Get detallesss
-     *
-     * @return string
-     */
-    public function getDetallesss()
-    {
-        return $this->detallesss;
-    }
-
-    /**
-     * Set fechainicio
-     *
-     * @param \DateTime $fechainicio
-     *
-     * @return Bitacora
-     */
-    public function setFechainicio($fechainicio)
-    {
-        $this->fechainicio = $fechainicio;
-
-        return $this;
-    }
-
-    /**
-     * Get fechainicio
-     *
-     * @return \DateTime
-     */
-    public function getFechainicio()
-    {
-        return $this->fechainicio;
-    }
 
     /**
      * Set horainicio
@@ -172,27 +110,27 @@ class Bitacora
     }
 
     /**
-     * Set descripcionactividad
+     * Set observacion
      *
-     * @param string $descripcionactividad
+     * @param string $observacion
      *
      * @return Bitacora
      */
-    public function setDescripcionactividad($descripcionactividad)
+    public function setObservacion($observacion)
     {
-        $this->descripcionactividad = $descripcionactividad;
+        $this->observacion = $observacion;
 
         return $this;
     }
 
     /**
-     * Get descripcionactividad
+     * Get observacion
      *
      * @return string
      */
-    public function getDescripcionactividad()
+    public function getObservacion()
     {
-        return $this->descripcionactividad;
+        return $this->observacion;
     }
 
     /**

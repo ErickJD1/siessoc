@@ -10,5 +10,3 @@ parameters:
     mailer_user: erick.jdominguez@gmail.com
     mailer_password: cafetigo..1205
     secret: ThisTokenIsNotSoSecretChangeIt
-
-

@@ -50,9 +50,9 @@ class Solicitudss
     private $lugar;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="ESTADO", type="smallint", nullable=true)
+     * @ORM\Column(name="ESTADO", type="string", length=15, nullable=true)
      */
     private $estado;
 
@@ -157,7 +157,7 @@ class Solicitudss
     /**
      * Set estado
      *
-     * @param integer $estado
+     * @param string $estado
      *
      * @return Solicitudss
      */
@@ -171,7 +171,7 @@ class Solicitudss
     /**
      * Get estado
      *
-     * @return integer
+     * @return string
      */
     public function getEstado()
     {
@@ -187,4 +187,12 @@ class Solicitudss
     {
         return $this->idsss;
     }
+
+
+public function __toString(){
+    // to show the name of the Category in the select
+    return $this->nombreproyecto;
+    // to show the id of the Category in the select
+    // return $this->id;
+}
 }
