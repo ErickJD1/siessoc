@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 app_actividad:
     resource: "@AppBundle/Controller/ActividadController.php"
     type:     annotation
@@ -10,6 +11,12 @@ app_solicitudss:
     resource: "@AppBundle/Controller/SolicitudssController.php"
     type:     annotation
 
+=======
+website:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    
+>>>>>>> e6ccac08b4da4957f2b9ecfcb3c1d90a27ab60fe
 salex_user:
     resource: "@SalexUserBundle/Controller/"
     type:     annotation
