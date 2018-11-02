@@ -1,3 +1,4 @@
+
 {% extends "layout/base-layout.html.twig" %}
 
 {% import "AvanzuAdminThemeBundle:layout:macros.html.twig" as macro %}
@@ -18,6 +19,12 @@
         </div>
         <br> </br>
         <table id="tabelMahasiswa" class="table table-bordered table-hover table-striped" id="tabelMahasiswa">
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Actividads list</h1>
+
+    <table>
         <thead>
             <tr>
                 <th>Nomactividad</th>
@@ -61,5 +68,12 @@
     </div>                    
     
 
+        </tbody>
+    </table>
 
+    <ul>
+        <li>
+            <a href="{{ path('actividad_new') }}">Create a new actividad</a>
+        </li>
+    </ul>
 {% endblock %}

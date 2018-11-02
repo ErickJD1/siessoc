@@ -1,6 +1,7 @@
 <?php
 
 namespace AppBundle\Form;
+<<<<<<< HEAD
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -10,6 +11,12 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 
+=======
+
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
 
 class ActividadType extends AbstractType
 {
@@ -18,6 +25,7 @@ class ActividadType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+<<<<<<< HEAD
        // $builder->add('nomactividad', array('label' => 'Nombre'))->add('fechaactividad')->add('descripcionactividad')->add('validacion')->add('becario')->add('estado')->add('idrequisito')        ;
          $builder
          ->add('nomactividad',TextType::class, array('label' => 'Nombre', 'attr' => array('class' => 'form-control')))
@@ -33,6 +41,13 @@ class ActividadType extends AbstractType
     
 
     /* {@inheritdoc}
+=======
+        $builder->add('nomactividad')->add('fechaactividad')->add('descripcionactividad')->add('validacion')->add('becario')->add('estado')->add('idrequisito')        ;
+    }
+    
+    /**
+     * {@inheritdoc}
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
      */
     public function configureOptions(OptionsResolver $resolver)
     {

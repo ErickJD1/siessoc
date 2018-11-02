@@ -36,9 +36,9 @@ class Requisito
     private $descripcion;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="ESTADO", type="smallint", nullable=true)
+     * @ORM\Column(name="ESTADO", type="string", length=6, nullable=true)
      */
     private $estado;
 
@@ -95,7 +95,7 @@ class Requisito
     /**
      * Set estado
      *
-     * @param integer $estado
+     * @param string $estado
      *
      * @return Requisito
      */
@@ -109,7 +109,7 @@ class Requisito
     /**
      * Get estado
      *
-     * @return integer
+     * @return string
      */
     public function getEstado()
     {
@@ -126,9 +126,18 @@ class Requisito
         return $this->idrequisito;
     }
 
+<<<<<<< HEAD
 
     public function __toString(){
 
         return $this->nombre;
     }
+=======
+    public function __toString(){
+    // to  show the name of the Category in the select
+    return $this->nombre;
+    // to show the id of the Category in the select
+    // return $this->id;
+}
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
 }

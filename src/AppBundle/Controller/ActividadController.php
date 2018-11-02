@@ -48,7 +48,11 @@ class ActividadController extends Controller
             $em->persist($actividad);
             $em->flush($actividad);
 
+<<<<<<< HEAD
             return $this->redirectToRoute('actividad_show', array('id' => $actividad->getIdactividad()));
+=======
+            return $this->redirectToRoute('actividad_show', array('id' => $actividad->getId()));
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
         }
 
         return $this->render('actividad/new.html.twig', array(
@@ -88,7 +92,11 @@ class ActividadController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
+<<<<<<< HEAD
             return $this->redirectToRoute('actividad_edit', array('id' => $actividad->getIdactividad()));
+=======
+            return $this->redirectToRoute('actividad_edit', array('id' => $actividad->getId()));
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
         }
 
         return $this->render('actividad/edit.html.twig', array(
@@ -128,7 +136,11 @@ class ActividadController extends Controller
     private function createDeleteForm(Actividad $actividad)
     {
         return $this->createFormBuilder()
+<<<<<<< HEAD
             ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getIdactividad())))
+=======
+            ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getId())))
+>>>>>>> 12e70727bdf60188549e507437fb72f39650a140
             ->setMethod('DELETE')
             ->getForm()
         ;
