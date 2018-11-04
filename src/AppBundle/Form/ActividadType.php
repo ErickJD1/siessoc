@@ -17,6 +17,7 @@ class ActividadType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+       // $builder->add('nomactividad', array('label' => 'Nombre'))->add('fechaactividad')->add('descripcionactividad')->add('validacion')->add('becario')->add('estado')->add('idrequisito')        ;
          $builder
          ->add('nomactividad',TextType::class, array('label' => 'Nombre', 'attr' => array('class' => 'form-control')))
          ->add('fechaactividad', DateType::class, array('label' => 'Fecha','data' =>( new \DateTime())))
