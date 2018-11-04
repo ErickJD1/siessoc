@@ -7,26 +7,11 @@
     <id name="idbitacora" type="integer" column="IDBITACORA">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="detallesss" type="string" column="DETALLESSS" length="250" nullable="true">
-      <options>
-        <option name="fixed"/>
-      </options>
-    </field>
-    <field name="fechainicio" type="datetime" column="FECHAINICIO" nullable="false">
-      <options>
-        <option name="default">CURRENT_TIMESTAMP</option>
-      </options>
-    </field>
     <field name="horainicio" type="time" column="HORAINICIO" nullable="true"/>
     <field name="horafin" type="time" column="HORAFIN" nullable="true"/>
-    <field name="descripcionactividad" type="string" column="DESCRIPCIONACTIVIDAD" length="250" nullable="true">
+    <field name="observacion" type="string" column="OBSERVACION" length="250" nullable="true">
       <options>
         <option name="fixed"/>
-      </options>
-    </field>
-    <field name="estado" type="smallint" column="ESTADO" nullable="true">
-      <options>
-        <option name="unsigned"/>
       </options>
     </field>
     <many-to-one field="idsss" target-entity="Solicitudss" fetch="LAZY">
