@@ -53,9 +53,11 @@ class SidebarListener
           $actividad->addChild(new MenuItemModel('crear_actividad', 'Crear Actividad', 'avanzu_admin_ui_gen_demo', $earg))
             ->addChild($icons = new MenuItemModel('consultar_actividades', 'Consultar Actividades', 'avanzu_admin_ui_icon_demo', $earg));
 
-            $actividad->addChild(new MenuItemModel('crear_actividad', 'Crear Actividad', 'avanzu_admin_ui_gen_demo', $earg))
-            ->addChild($icons = new MenuItemModel('consultar_actividades', 'Consultar Actividades', 'avanzu_admin_ui_icon_demo', $earg));
-
+        //Creacion desegundio nivel de menu
+           $movimiento= new MenuItemModel('movimiento', 'Movimiento', 'avanzu_admin_ui_gen_demo', $earg );
+           $movimiento->addChild(new MenuItemModel('crear_movimiento', 'Crear Movimiento', 'tipocuenta_new', $earg));
+           $movimiento->addChild(new MenuItemModel('consultar_movimiento', 'Consultar Movimiento', 'tipocuenta_index', $earg));
+           $fondos->addChild($movimiento);
 
 
          return $this->activateByRoute($request->get('_route'), $rootItems);
