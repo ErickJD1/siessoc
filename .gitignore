@@ -1,6 +1,5 @@
-
-
 /var/cache/
 *.data
-*.data
 
+
+var/sessions/
