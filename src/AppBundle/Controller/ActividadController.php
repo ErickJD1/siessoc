@@ -48,6 +48,8 @@ class ActividadController extends Controller
             $em->persist($actividad);
             $em->flush($actividad);
 
+
+
             return $this->redirectToRoute('actividad_show', array('id' => $actividad->getIdactividad()));
 
             return $this->redirectToRoute('actividad_show', array('id' => $actividad->getId()));
@@ -132,6 +134,7 @@ class ActividadController extends Controller
     private function createDeleteForm(Actividad $actividad)
     {
         return $this->createFormBuilder()
+
             ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getIdactividad())))
             ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getId())))
             ->setMethod('DELETE')
