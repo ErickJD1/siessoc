@@ -126,18 +126,8 @@ class Requisito
         return $this->idrequisito;
     }
 
-<<<<<<< HEAD
-
     public function __toString(){
 
-        return $this->nombre;
-    }
-=======
-    public function __toString(){
-    // to  show the name of the Category in the select
     return $this->nombre;
-    // to show the id of the Category in the select
-    // return $this->id;
 }
->>>>>>> 12e70727bdf60188549e507437fb72f39650a140
 }
