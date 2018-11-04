@@ -5,7 +5,8 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Actividad;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Actividad controller.
@@ -52,7 +53,7 @@ class ActividadController extends Controller
 
             return $this->redirectToRoute('actividad_show', array('id' => $actividad->getIdactividad()));
 
-            return $this->redirectToRoute('actividad_show', array('id' => $actividad->getId()));
+            
         }
 
         return $this->render('actividad/new.html.twig', array(
@@ -94,7 +95,7 @@ class ActividadController extends Controller
 
             return $this->redirectToRoute('actividad_edit', array('id' => $actividad->getIdactividad()));
 
-            return $this->redirectToRoute('actividad_edit', array('id' => $actividad->getId()));
+            
         }
 
         return $this->render('actividad/edit.html.twig', array(
@@ -136,7 +137,6 @@ class ActividadController extends Controller
         return $this->createFormBuilder()
 
             ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getIdactividad())))
-            ->setAction($this->generateUrl('actividad_delete', array('id' => $actividad->getId())))
             ->setMethod('DELETE')
             ->getForm()
         ;
