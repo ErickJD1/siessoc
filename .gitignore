@@ -1,7 +1,4 @@
-
-
 /var/cache/
 *.data
-*.data
 
-var/logs/dev.log
+var/sessions/
