@@ -1,3 +1,24 @@
+
+{% extends "layout/base-layout.html.twig" %}
+
+{% import "AvanzuAdminThemeBundle:layout:macros.html.twig" as macro %}
+{% block stylesheets %}
+    {{ parent() }}
+ {%endblock%}
+{% block page_title %} Actividades | {% endblock %}
+{% block page_subtitle %}Gestion de Actividades {% endblock %}
+
+{% block page_content %}
+
+    <div class="box box-primary">
+   <div style="width:90%; margin-left:5%; margin-top: 2% ">
+    
+        <div align="left">
+            <button class="btn btn-info" data-toggle="modal" data-target="#create1"> + Actividad</button>
+         {{ render(controller('AppBundle:Actividad:new' )) }}
+        </div>
+        <br> </br>
+        <table id="tabelMahasiswa" class="table table-bordered table-hover table-striped" id="tabelMahasiswa">
 {% extends 'base.html.twig' %}
 
 {% block body %}
@@ -38,6 +59,15 @@
                 </td>
             </tr>
         {% endfor %}
+  </tbody>
+
+        </table>
+
+        </div>
+
+    </div>                    
+    
+
         </tbody>
     </table>
 
