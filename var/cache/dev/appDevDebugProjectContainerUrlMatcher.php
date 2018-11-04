@@ -158,6 +158,130 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        if (0 === strpos($pathinfo, '/actividad')) {
+            // actividad_index
+            if (rtrim($pathinfo, '/') === '/actividad') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_actividad_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'actividad_index');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\ActividadController::indexAction',  '_route' => 'actividad_index',);
+            }
+            not_actividad_index:
+
+            // actividad_new
+            if ($pathinfo === '/actividad/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_actividad_new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\ActividadController::newAction',  '_route' => 'actividad_new',);
+            }
+            not_actividad_new:
+
+            // actividad_show
+            if (preg_match('#^/actividad/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_actividad_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'actividad_show')), array (  '_controller' => 'AppBundle\\Controller\\ActividadController::showAction',));
+            }
+            not_actividad_show:
+
+            // actividad_edit
+            if (preg_match('#^/actividad/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_actividad_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'actividad_edit')), array (  '_controller' => 'AppBundle\\Controller\\ActividadController::editAction',));
+            }
+            not_actividad_edit:
+
+            // actividad_delete
+            if (preg_match('#^/actividad/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_actividad_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'actividad_delete')), array (  '_controller' => 'AppBundle\\Controller\\ActividadController::deleteAction',));
+            }
+            not_actividad_delete:
+
+        }
+
+        if (0 === strpos($pathinfo, '/bitacora')) {
+            // bitacora_index
+            if (rtrim($pathinfo, '/') === '/bitacora') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_bitacora_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'bitacora_index');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\BitacoraController::indexAction',  '_route' => 'bitacora_index',);
+            }
+            not_bitacora_index:
+
+            // bitacora_new
+            if ($pathinfo === '/bitacora/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_bitacora_new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\BitacoraController::newAction',  '_route' => 'bitacora_new',);
+            }
+            not_bitacora_new:
+
+            // bitacora_show
+            if (preg_match('#^/bitacora/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_bitacora_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'bitacora_show')), array (  '_controller' => 'AppBundle\\Controller\\BitacoraController::showAction',));
+            }
+            not_bitacora_show:
+
+            // bitacora_edit
+            if (preg_match('#^/bitacora/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_bitacora_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'bitacora_edit')), array (  '_controller' => 'AppBundle\\Controller\\BitacoraController::editAction',));
+            }
+            not_bitacora_edit:
+
+            // bitacora_delete
+            if (preg_match('#^/bitacora/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_bitacora_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'bitacora_delete')), array (  '_controller' => 'AppBundle\\Controller\\BitacoraController::deleteAction',));
+            }
+            not_bitacora_delete:
+
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -170,6 +294,68 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // admin_dashboard
         if ($pathinfo === '/dashboard') {
             return array (  '_controller' => 'AppBundle\\Controller\\DashboardController::dashboardAction',  '_route' => 'admin_dashboard',);
+        }
+
+        if (0 === strpos($pathinfo, '/servicio_social')) {
+            // servicio_social_index
+            if (rtrim($pathinfo, '/') === '/servicio_social') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_servicio_social_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'servicio_social_index');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\SolicitudssController::indexAction',  '_route' => 'servicio_social_index',);
+            }
+            not_servicio_social_index:
+
+            // servicio_social_new
+            if ($pathinfo === '/servicio_social/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_servicio_social_new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\SolicitudssController::newAction',  '_route' => 'servicio_social_new',);
+            }
+            not_servicio_social_new:
+
+            // servicio_social_show
+            if (preg_match('#^/servicio_social/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_servicio_social_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'servicio_social_show')), array (  '_controller' => 'AppBundle\\Controller\\SolicitudssController::showAction',));
+            }
+            not_servicio_social_show:
+
+            // servicio_social_edit
+            if (preg_match('#^/servicio_social/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_servicio_social_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'servicio_social_edit')), array (  '_controller' => 'AppBundle\\Controller\\SolicitudssController::editAction',));
+            }
+            not_servicio_social_edit:
+
+            // servicio_social_delete
+            if (preg_match('#^/servicio_social/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_servicio_social_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'servicio_social_delete')), array (  '_controller' => 'AppBundle\\Controller\\SolicitudssController::deleteAction',));
+            }
+            not_servicio_social_delete:
+
         }
 
         if (0 === strpos($pathinfo, '/tipocuenta')) {
@@ -232,6 +418,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
         }
+
+        // web_index
+        if (rtrim($pathinfo, '/') === '/webSite') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_web_index;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'web_index');
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\WebSiteController::webAction',  '_route' => 'web_index',);
+        }
+        not_web_index:
 
         // avanzu_admin_home
         if (rtrim($pathinfo, '/') === '/demo-admin') {
